@@ -59,7 +59,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
             <div className="max-w-[440px] w-full bg-white rounded-[8px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 md:p-10">
                 {/* Logo Section */}
                 <div className="flex justify-center mb-8">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/UEFA_logo.svg/1200px-UEFA_logo.svg.png" alt="UEFA logo" className="h-[40px] w-auto" />
+                    <img src="https://1000logos.net/wp-content/uploads/2022/01/UEFA-logo-768x432.png" alt="UEFA logo" className="h-[40px] w-auto" />
                 </div>
 
                 <h2 className="text-[24px] font-bold text-[#1f262d] mb-6 text-center">UEFA Ticket Portal</h2>
@@ -95,7 +95,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
                         />
                     </div>
 
-                        <button
+                    <button
                         type="submit"
                         className="w-full bg-[#026cdf] text-white py-4 rounded-[8px] font-black text-lg hover:opacity-90 transition-all shadow-lg active:scale-[0.98] mt-4"
                         disabled={loading}
