@@ -228,7 +228,7 @@ export default function RootLayoutWrapper({
                   <ul className="space-y-3 text-[14px] text-gray-300">
                     <li><button onClick={() => openExternalLink('/about')} className="hover:text-white transition-colors">Who We Are</button></li>
                     <li><button onClick={() => openExternalLink('/careers')} className="hover:text-white transition-colors">Careers</button></li>
-                    <li><button onClick={() => openExternalLink('/ticketmaster-blog')} className="hover:text-white transition-colors">Ticketmaster Blog</button></li>
+                    <li><button onClick={() => openExternalLink('/news')} className="hover:text-white transition-colors">UEFA News</button></li>
                     <li><button onClick={() => openExternalLink('/privacy')} className="hover:text-white transition-colors">Privacy Policy</button></li>
                   </ul>
                 </div>
