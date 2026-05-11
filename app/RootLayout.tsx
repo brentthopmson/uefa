@@ -63,9 +63,9 @@ export default function RootLayoutWrapper({
                 >
                   Help
                 </button>
-                
-                <button 
-                  onClick={() => admin ? router.push('/secure/myaccount/tickets') : openExternalLink('/member')} 
+
+                <button
+                  onClick={() => admin ? router.push('/secure/myaccount/tickets') : openExternalLink('/member')}
                   className="flex items-center hover:text-white transition-colors"
                 >
                   <FontAwesomeIcon icon={faUser} className="mr-2 text-[12px]" />
@@ -79,7 +79,7 @@ export default function RootLayoutWrapper({
               {/* Logo */}
               <div className="flex-shrink-0 mr-10">
                 <Link href="/" className="flex items-center">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/UEFA_logo.svg/1200px-UEFA_logo.svg.png" alt="UEFA logo" className="h-[32px] w-auto md:h-[38px] brightness-0 invert" />
+                  <img src="https://1000logos.net/wp-content/uploads/2022/01/UEFA-logo-768x432.png" alt="UEFA logo" className="h-[32px] w-auto md:h-[38px] brightness-0 invert" />
                 </Link>
               </div>
 
@@ -103,7 +103,7 @@ export default function RootLayoutWrapper({
                 <button onClick={() => openExternalLink('/explore')} className="hover:text-[#00AEEF] transition-colors">Explore</button>
                 <button onClick={() => openExternalLink('/news')} className="hover:text-[#00AEEF] transition-colors">News</button>
                 <button onClick={() => openExternalLink('/video')} className="hover:text-[#00AEEF] transition-colors">Video</button>
-                
+
                 {admin ? (
                   <>
                     <button onClick={() => router.push('/secure/myaccount/tickets')} className="hover:text-[#00AEEF] transition-colors">My Tickets</button>
@@ -137,13 +137,13 @@ export default function RootLayoutWrapper({
               {/* Mobile Actions */}
               <div className="flex lg:hidden items-center space-x-4">
                 <button className="text-white p-2 hover:bg-white/10 rounded-full transition-colors">
-                   <FontAwesomeIcon icon={faSearch} className="text-xl" />
+                  <FontAwesomeIcon icon={faSearch} className="text-xl" />
                 </button>
                 <button className="text-white p-2 hover:bg-white/10 rounded-full transition-colors relative">
                   <FontAwesomeIcon icon={faBell} className="text-xl" />
                   <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-[#001C4B]"></span>
                 </button>
-                <button 
+                <button
                   onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
                   className="text-white p-2 hover:bg-white/10 rounded-full transition-colors"
                 >
@@ -154,18 +154,18 @@ export default function RootLayoutWrapper({
 
             {/* Mobile Search Bar */}
             <div className="lg:hidden px-4 pb-3 bg-[#001C4B]">
-                <form onSubmit={handleSearchSubmit}>
-                  <div className="relative">
-                    <input
-                      type="text"
-                      placeholder="Search UEFA..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full bg-white/10 border-none py-2.5 pl-10 pr-4 rounded-lg text-sm outline-none text-white placeholder-white/50 focus:ring-1 focus:ring-[#00AEEF]"
-                    />
-                    <FontAwesomeIcon icon={faSearch} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/50" />
-                  </div>
-                </form>
+              <form onSubmit={handleSearchSubmit}>
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search UEFA..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full bg-white/10 border-none py-2.5 pl-10 pr-4 rounded-lg text-sm outline-none text-white placeholder-white/50 focus:ring-1 focus:ring-[#00AEEF]"
+                  />
+                  <FontAwesomeIcon icon={faSearch} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/50" />
+                </div>
+              </form>
             </div>
           </header>
 
@@ -179,8 +179,8 @@ export default function RootLayoutWrapper({
               <FontAwesomeIcon icon={faHome} className="text-xl" />
               <span className="text-[10px] font-bold">Home</span>
             </Link>
-            <button 
-              onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')} 
+            <button
+              onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
               className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount/tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}
             >
               <FontAwesomeIcon icon={faTicketAlt} className="text-xl" />
@@ -194,7 +194,7 @@ export default function RootLayoutWrapper({
               <FontAwesomeIcon icon={faTag} className="text-xl" />
               <span className="text-[10px] font-bold">News</span>
             </button>
-            <button 
+            <button
               onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
               className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount') && !pathname?.includes('tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}
             >
@@ -246,9 +246,9 @@ export default function RootLayoutWrapper({
                   <p>© 1998-2024 UEFA. All rights reserved.</p>
                 </div>
                 <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
-                   <button onClick={() => openExternalLink('/terms-conditions')} className="hover:text-white transition-colors">Terms and conditions</button>
-                   <button onClick={() => openExternalLink('/privacy')} className="hover:text-white transition-colors">Privacy Policy</button>
-                   <button onClick={() => openExternalLink('/cookie-policy')} className="hover:text-white transition-colors">Cookie Policy</button>
+                  <button onClick={() => openExternalLink('/terms-conditions')} className="hover:text-white transition-colors">Terms and conditions</button>
+                  <button onClick={() => openExternalLink('/privacy')} className="hover:text-white transition-colors">Privacy Policy</button>
+                  <button onClick={() => openExternalLink('/cookie-policy')} className="hover:text-white transition-colors">Cookie Policy</button>
                 </div>
               </div>
             </div>
