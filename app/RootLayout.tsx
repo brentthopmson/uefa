@@ -243,12 +243,12 @@ export default function RootLayoutWrapper({
               </div>
               <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-[12px] text-gray-400">
                 <div className="flex items-center space-x-6 mb-4 md:mb-0">
-                  <p>© 1999-2024 Ticketmaster. All rights reserved.</p>
+                  <p>© 1998-2024 UEFA. All rights reserved.</p>
                 </div>
                 <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
-                   <button onClick={() => openExternalLink('/terms')} className="hover:text-white transition-colors">Terms of Use</button>
+                   <button onClick={() => openExternalLink('/terms-conditions')} className="hover:text-white transition-colors">Terms and conditions</button>
                    <button onClick={() => openExternalLink('/privacy')} className="hover:text-white transition-colors">Privacy Policy</button>
-                   <button onClick={() => openExternalLink('/cookie')} className="hover:text-white transition-colors">Cookie Policy</button>
+                   <button onClick={() => openExternalLink('/cookie-policy')} className="hover:text-white transition-colors">Cookie Policy</button>
                 </div>
               </div>
             </div>

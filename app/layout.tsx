@@ -16,11 +16,10 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1, format-detection=telephone=no',
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon.png', type: 'image/png' },
+      { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJEeQooGVRcuv7w9UddBTFqiXMIBDVUVrQ&s' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/favicon.png',
+    shortcut: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJEeQooGVRcuv7w9UddBTFqiXMIBDVUVrQ&s',
+    apple: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJEeQooGVRcuv7w9UddBTFqiXMIBDVUVrQ&s',
   },
   openGraph: {
     url: 'https://www.uefa.com/tickets',
