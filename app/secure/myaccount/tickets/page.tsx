@@ -55,7 +55,7 @@ export default function MyTicketsPage() {
         } else {
             router.replace('/login');
         }
-    }, [setAdmin, router]);
+    }, [setAdmin, router, fetchAllTickets]);
 
     useEffect(() => {
         if (isSessionValid === true && loggedInAdmin && Array.isArray(allTickets)) {

@@ -66,7 +66,7 @@ const UserTable: React.FC<UserTableProps> = ({ users, tickets }) => {
         setIsActionLoading(false);
       });
     }
-  }, [APP_SCRIPT_POST_URL]);
+  }, [APP_SCRIPT_POST_URL, fetchAllUsers]);
 
   return (
     <>

@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { User, Ticket, Admin } from './types';
 import { useRef } from 'react';
@@ -81,7 +81,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
       }
   };
 
-  const fetchAdminData = async (username: string, password: string): Promise<boolean> => {
+  const fetchAdminData = useCallback(async (username: string, password: string): Promise<boolean> => {
     try {
       //setLoading(true);
       const data: Admin[] = await fetchWithRetry(APP_SCRIPT_ADMIN_URL);
@@ -115,10 +115,10 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     } finally {
       //setLoading(false);
     }
-  };
+  }, []);
 
 
-    const fetchUserData = async (id: string): Promise<User | null> => { // Corrected implementation
+    const fetchUserData = useCallback(async (id: string): Promise<User | null> => { // Corrected implementation
         try {
             const data: User[] = await fetchWithRetry(APP_SCRIPT_USER_URL);
             const userData = data.find((row: User) => row.userId === id);
@@ -136,9 +136,9 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
         } finally {
             //setLoading(false);
         }
-    };
+    }, [router]);
 
-  const fetchAllUsers = async () => {
+  const fetchAllUsers = useCallback(async () => {
     try {
       //setLoading(true);
       const data: User[] = await fetchWithRetry(APP_SCRIPT_USER_URL);
@@ -151,9 +151,9 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     } finally {
       //setLoading(false);
     }
-  };
+  }, []);
 
-  const fetchTicketData = async (ticketId: string) => {
+  const fetchTicketData = useCallback(async (ticketId: string) => {
     try {
       //setLoading(true);
       const data: Ticket[] = await fetchWithRetry(APP_SCRIPT_TICKET_URL);
@@ -167,9 +167,9 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     } finally {
       //setLoading(false);
     }
-  };
+  }, []);
 
-  const fetchAllTickets = async () => {
+  const fetchAllTickets = useCallback(async () => {
     try {
       //setLoading(true);
       const data: Ticket[] = await fetchWithRetry(APP_SCRIPT_TICKET_URL);
@@ -182,7 +182,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     } finally {
       //setLoading(false);
     }
-  };
+  }, []);
 
   const refreshData = () => {
       initialLoad.current = true;
@@ -242,7 +242,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
           localStorage.removeItem('ticketData');
           setTicket(null);
       }
-  }, [searchParams, router, user]);
+  }, [searchParams, router, user, fetchUserData, fetchAllUsers, fetchAllTickets, fetchTicketData]);
 
   // Add this to your useEffect in UserContext.tsx
   useEffect(() => {
@@ -261,7 +261,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
       // If we only have the username but not the full data, try to fetch it
       fetchAdminData(loggedInAdminUsername, ""); // Password will be ignored in this case
     }
-  }, []);
+  }, [fetchAdminData]);
 
   return (
       <UserContext.Provider

@@ -65,7 +65,7 @@ export default function TicketDetailsAccountPage() {
         } else {
             router.replace('/login');
         }
-    }, [setAdmin, router]);
+    }, [setAdmin, router, allTickets.length, fetchAllTickets]);
 
     useEffect(() => {
         if (isSessionValid && allTickets.length > 0) {

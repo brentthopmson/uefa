@@ -54,7 +54,7 @@ export default function ManageDashboard() {
         } else {
             setIsSessionValid(false);
         }
-    }, [setAdmin]);
+    }, [setAdmin, fetchAllUsers, fetchAllTickets]);
 
     useEffect(() => {
         if (isSessionValid === true && loggedInAdmin && Array.isArray(allUsers)) {
