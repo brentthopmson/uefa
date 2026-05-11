@@ -51,7 +51,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://img.uefa.com" />
         <link rel="preconnect" href="https://media.stubhubstatic.com" />
         <link rel="dns-prefetch" href="https://media.stubhubstatic.com" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" />
       </head>
       <body className={inter.className}>
         <UserProvider>
