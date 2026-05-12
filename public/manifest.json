@@ -2,7 +2,7 @@
   "name": "UEFA Ticket Portal",
   "short_name": "UEFA Tickets",
   "description": "Manage and use your official UEFA match tickets",
-  "start_url": "/",
+  "start_url": "/login",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
