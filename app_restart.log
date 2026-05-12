@@ -151,3 +151,40 @@
 3002 - [35mevent[39m compiled client and server successfully in 27s (628 modules)
 3002 
 3002 
+3002 - [36mwait[39m compiling /ticket-details/[id]/page (client and server)...
+3002 - [35mevent[39m compiled successfully in 2.9s (249 modules)
+3002 
+3002 
+3002 
+3002 - [36mwait[39m compiling /login/page (client and server)...
+3002 - [35mevent[39m compiled successfully in 1667 ms (255 modules)
+3002 
+3002 - [36mwait[39m compiling...
+3002 - [35mevent[39m compiled client and server successfully in 7s (630 modules)
+3002 
+3002 
+3002 - [36mwait[39m compiling /secure/myaccount/tickets/page (client and server)...
+3002 - [35mevent[39m compiled client and server successfully in 6.4s (624 modules)
+3002 
+3002 
+3002 
+3002 
+3002 - [36mwait[39m compiling /secure/myaccount/tickets/[id]/page (client and server)...
+3002 - [35mevent[39m compiled client and server successfully in 4.8s (628 modules)
+3002 
+3002 
+3002 
+3002 - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+3002 - [35mevent[39m compiled client and server successfully in 10.3s (653 modules)
+3002 
+3002 
+3002 
+3002 
+3002 - [36mwait[39m compiling /secure/myaccount/tickets/[id]/page (client and server)...
+3002 - [35mevent[39m compiled successfully in 669 ms (246 modules)
+3002 
+3002 
+3002 
+3002 
+3002 
+3002 
