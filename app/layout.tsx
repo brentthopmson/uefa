@@ -13,6 +13,7 @@ export const metadata = {
   title: 'UEFA Mobile Tickets - Official Match Tickets',
   description: 'Manage, transfer and use your official UEFA match tickets for Euro 2024, Champions League and more.',
   keywords: 'uefa, tickets, euro 2024, champions league, mobile tickets',
+  manifest: '/manifest.json',
   viewport: 'width=device-width, initial-scale=1, format-detection=telephone=no',
   icons: {
     icon: [
@@ -43,6 +44,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="theme-color" content="#001C4B" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="UEFA Tickets" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://ws.vggcdn.net/" />
         <link rel="dns-prefetch" href="https://ws.vggcdn.net/" />
         <link rel="preconnect" href="https://img.vggcdn.net/" />
