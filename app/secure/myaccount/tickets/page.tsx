@@ -15,7 +15,10 @@ import {
     faSignOutAlt,
     faBars,
     faTimes,
-    faLock
+    faLock,
+    faChevronLeft,
+    faExchangeAlt,
+    faSearch
 } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
@@ -36,11 +39,11 @@ export default function MyTicketsPage() {
     const [activeTab, setActiveTab] = useState<'upcoming' | 'past'>('upcoming');
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         const adminUsername = sessionStorage.getItem("loggedInAdmin");
         const adminData = sessionStorage.getItem('adminData');
-    
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
@@ -59,10 +62,48 @@ export default function MyTicketsPage() {
 
     useEffect(() => {
         if (isSessionValid === true && loggedInAdmin && Array.isArray(allTickets)) {
-            const filtered = allTickets.filter((t) => t.admin === loggedInAdmin);
+            const filtered = allTickets.filter((t) => {
+                // 1. Must belong to the logged-in admin
+                const matchesAdmin = t.admin === loggedInAdmin;
+                
+                // 2. Must not be deleted
+                const isNotDeleted = !t.deletedSTAMP || t.deletedSTAMP.trim() === "";
+                
+                // 3. Platform must include "uefa" (comma separated)
+                const platformList = t.platform?.toLowerCase().split(',').map(p => p.trim()) || [];
+                const matchesPlatform = platformList.includes("uefa");
+
+                if (!matchesAdmin || !isNotDeleted || !matchesPlatform) return false;
+
+                // 4. Filter by Tab (Upcoming vs Past)
+                // eventStatus: PAST, ACTIVE, WAITING
+                let matchesTab = false;
+                if (activeTab === 'upcoming') {
+                    matchesTab = t.eventStatus === 'ACTIVE' || t.eventStatus === 'WAITING';
+                } else {
+                    matchesTab = t.eventStatus === 'PAST';
+                }
+
+                if (!matchesTab) return false;
+
+                // 5. Search Filter
+                if (searchTerm.trim()) {
+                    const term = searchTerm.toLowerCase();
+                    const matchesSearch = 
+                        t.eventName?.toLowerCase().includes(term) ||
+                        t.ticketId?.toLowerCase().includes(term) ||
+                        t.venue?.toLowerCase().includes(term) ||
+                        t.location?.toLowerCase().includes(term) ||
+                        t.seatNumbers?.toLowerCase().includes(term);
+                    
+                    if (!matchesSearch) return false;
+                }
+
+                return true;
+            });
             setFilteredTickets(filtered);
         }
-    }, [allTickets, loggedInAdmin, isSessionValid]);
+    }, [allTickets, loggedInAdmin, isSessionValid, activeTab, searchTerm]);
 
     const handleLogout = () => {
         sessionStorage.removeItem("loggedInAdmin");
@@ -74,46 +115,37 @@ export default function MyTicketsPage() {
     };
 
     const sidebarItems = [
-        { icon: faTicketAlt, label: 'My Purchases', active: true },
-        { icon: faUserCircle, label: 'Personal Details', active: false },
-        { icon: faCog, label: 'Account Settings', active: false },
-        { icon: faShieldAlt, label: 'Privacy', active: false },
-        { icon: faQuestionCircle, label: 'Help', active: false },
+        { icon: faTicketAlt, label: 'My Purchases', active: true, href: '/secure/myaccount/tickets' },
+        { icon: faExchangeAlt, label: 'Transfers', active: false, href: '/secure/myaccount/transfers' },
+        { icon: faUserCircle, label: 'Personal Details', active: false, href: '#' },
+        { icon: faCog, label: 'Account Settings', active: false, href: '#' },
+        { icon: faShieldAlt, label: 'Privacy', active: false, href: '#' },
+        { icon: faQuestionCircle, label: 'Help', active: false, href: '#' },
+        { icon: faSignOutAlt, label: 'Sign Out', active: false, action: handleLogout },
     ];
 
     if (isSessionValid === null) return null;
 
     return (
-        <div className="min-h-screen bg-[#f4f7f9] flex flex-col font-sans">
-            {/* Header - White Background as requested */}
-            <header className="bg-white text-[#1f262d] border-b border-gray-100 p-4 sticky top-0 z-50">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
-                    <div className="flex items-center">
-                        <button 
-                            className="mr-4 lg:hidden text-2xl text-[#1f262d]"
-                            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                        >
-                            <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
-                        </button>
-                        <div className="flex items-center cursor-pointer" onClick={() => router.push('/')}>
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/UEFA_logo.svg/1200px-UEFA_logo.svg.png" alt="UEFA logo" className="h-[28px] w-auto md:h-[32px]" />
-                        </div>
-                    </div>
-                    <div className="flex items-center space-x-6">
-                        <span className="hidden md:block text-sm font-bold uppercase tracking-wider text-gray-500">Hi, {admin?.username}</span>
-                        <button onClick={handleLogout} className="text-sm font-black text-[#1f262d] hover:text-[#026cdf] transition-colors flex items-center">
-                            <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" /> Sign Out
-                        </button>
-                    </div>
+        <div className="min-h-screen bg-[#001C4B] flex flex-col font-sans">
+
+            {/* ── Header: nav hamburger on left, title centered ── */}
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 sticky top-0 z-50">
+                <div className="max-w-7xl mx-auto flex items-center justify-between">
+                    <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
+                        <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} className="text-xl" />
+                    </button>
+                    <h1 className="text-lg font-black text-white tracking-tight">My Purchases</h1>
+                    <button onClick={handleLogout} className="text-white/80 hover:text-red-400 transition-colors p-1">
+                        <FontAwesomeIcon icon={faSignOutAlt} className="text-xl" />
+                    </button>
                 </div>
             </header>
 
             <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
-                {/* Sidebar */}
-                <aside className={`
-                    fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:bg-transparent lg:inset-auto lg:w-64
-                    ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
-                `}>
+
+                {/* ── Sidebar ── */}
+                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:bg-transparent lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className="p-6 lg:p-0">
                         <div className="lg:hidden flex justify-end mb-8">
                             <button onClick={() => setIsSidebarOpen(false)} className="text-2xl text-[#1f262d]">
@@ -122,22 +154,23 @@ export default function MyTicketsPage() {
                         </div>
                         <nav className="space-y-1">
                             {sidebarItems.map((item, i) => (
-                                <button
-                                    key={i}
-                                    className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#026cdf] text-white font-black shadow-lg shadow-[#026cdf]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}
-                                >
-                                    <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                    <span>{item.label}</span>
-                                </button>
+                                item.href && item.href !== '#' ? (
+                                    <Link key={i} href={item.href}
+                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
+                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
+                                        <span>{item.label}</span>
+                                    </Link>
+                                ) : (
+                                    <button key={i} onClick={(item as any).action}
+                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${(item as any).label === 'Sign Out' ? 'text-red-600 hover:bg-red-50' : (item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold')}`}>
+                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
+                                        <span>{item.label}</span>
+                                    </button>
+                                )
                             ))}
                         </nav>
-
-                        {/* Management Link */}
                         <div className="mt-12 pt-8 border-t border-gray-100">
-                            <Link 
-                                href="/secure/myaccount/manage" 
-                                className="flex items-center space-x-3 text-gray-400 hover:text-[#026cdf] transition-colors text-[10px] font-black uppercase tracking-widest"
-                            >
+                            <Link href="/secure/myaccount/manage" className="flex items-center space-x-3 text-gray-400 hover:text-[#001C4B] transition-colors text-[10px] font-black uppercase tracking-widest">
                                 <FontAwesomeIcon icon={faLock} className="w-4" />
                                 <span>Admin Panel</span>
                             </Link>
@@ -145,83 +178,66 @@ export default function MyTicketsPage() {
                     </div>
                 </aside>
 
-                {/* Main Content */}
-                <main className="flex-1">
-                    <h1 className="text-4xl font-black text-[#1f262d] mb-8 tracking-tight">My Purchases</h1>
+                {/* ── Main Content ── */}
+                <main className="flex-1 pb-24 lg:pb-0">
 
-                    {/* Tabs */}
-                    <div className="flex border-b border-gray-200 mb-8 overflow-x-auto">
-                        <button
-                            onClick={() => setActiveTab('upcoming')}
-                            className={`px-8 py-4 font-black text-xs uppercase tracking-widest transition-all border-b-4 whitespace-nowrap ${activeTab === 'upcoming' ? 'border-[#026cdf] text-[#1f262d]' : 'border-transparent text-gray-400 hover:text-[#1f262d]'}`}
-                        >
-                            Upcoming
-                        </button>
-                        <button
-                            onClick={() => setActiveTab('past')}
-                            className={`px-8 py-4 font-black text-xs uppercase tracking-widest transition-all border-b-4 whitespace-nowrap ${activeTab === 'past' ? 'border-[#026cdf] text-[#1f262d]' : 'border-transparent text-gray-400 hover:text-[#1f262d]'}`}
-                        >
-                            Past
-                        </button>
+                    {/* Search */}
+                    <div className="relative mb-6">
+                        <input
+                            type="text"
+                            placeholder="Search by event, ticket ID, or venue..."
+                            className="w-full p-4 pl-12 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 font-bold text-sm outline-none focus:ring-2 focus:ring-white/30 transition-all"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                        <FontAwesomeIcon icon={faSearch} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
                     </div>
 
-                    {/* Tickets List */}
-                    <div className="space-y-6">
+                    {/* Tabs */}
+                    <div className="flex border-b border-white/20 mb-6 overflow-x-auto">
+                        {(['upcoming', 'past'] as const).map(tab => (
+                            <button key={tab} onClick={() => setActiveTab(tab)}
+                                className={`px-8 py-4 font-black text-xs uppercase tracking-widest transition-all border-b-4 whitespace-nowrap ${activeTab === tab ? 'border-white text-white' : 'border-transparent text-white/50 hover:text-white'}`}>
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Ticket List */}
+                    <div className="space-y-4">
                         {activeTab === 'upcoming' ? (
                             filteredTickets.length > 0 ? (
                                 filteredTickets.map((ticket, i) => (
                                     <TicketCard key={i} ticket={ticket} />
                                 ))
                             ) : (
-                                <div className="bg-white rounded-[24px] p-16 text-center shadow-xl shadow-[#1f262d]/5 border border-gray-100">
-                                    <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                                        <FontAwesomeIcon icon={faTicketAlt} className="text-3xl text-gray-200" />
+                                <div className="bg-white rounded-[20px] p-16 text-center shadow-sm border border-gray-100">
+                                    <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                                        <FontAwesomeIcon icon={faTicketAlt} className="text-2xl text-gray-200" />
                                     </div>
-                                    <h3 className="text-2xl font-black text-[#1f262d] mb-2">No upcoming purchases</h3>
-                                    <p className="text-gray-400 font-bold mb-8">Find your next live experience today!</p>
-                                    <button 
-                                        onClick={() => router.push('/')}
-                                        className="bg-[#026cdf] text-white px-10 py-4 rounded-2xl font-black text-sm hover:scale-[1.02] transition-transform shadow-xl shadow-[#026cdf]/20"
-                                    >
+                                    <h3 className="text-xl font-black text-[#1f262d] mb-2">No upcoming purchases</h3>
+                                    <p className="text-gray-400 font-bold mb-8 text-sm">Find your next live experience today!</p>
+                                    <button onClick={() => router.push('/')}
+                                        className="bg-[#001C4B] text-white px-10 py-4 rounded-xl font-black text-sm hover:scale-[1.02] transition-transform shadow-xl shadow-[#001C4B]/20">
                                         Browse Events
                                     </button>
                                 </div>
                             )
                         ) : (
-                            <div className="bg-white rounded-[24px] p-16 text-center shadow-sm border border-gray-100">
-                                <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest">No past purchases to show.</p>
-                            </div>
+                            filteredTickets.length > 0 ? (
+                                filteredTickets.map((ticket, i) => (
+                                    <TicketCard key={i} ticket={ticket} />
+                                ))
+                            ) : (
+                                <div className="bg-white rounded-[20px] p-16 text-center shadow-sm border border-gray-100">
+                                    <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest">No past purchases to show.</p>
+                                </div>
+                            )
                         )}
                     </div>
                 </main>
             </div>
 
-            {/* Global Mobile Footer - Reference Yahoo Link Aesthetic */}
-            <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-8 py-3 flex justify-between items-center z-[100] shadow-[0_-8px_30px_rgb(0,0,0,0.04)]">
-                <button onClick={() => router.push('/')} className="flex flex-col items-center space-y-1 text-gray-300 hover:text-[#026cdf] transition-colors">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                    <span className="text-[9px] font-black uppercase tracking-wider">Home</span>
-                </button>
-                <button onClick={() => router.push('/secure/myaccount/tickets')} className="flex flex-col items-center space-y-1 text-[#026cdf]">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" /></svg>
-                    <span className="text-[9px] font-black uppercase tracking-wider">Tickets</span>
-                </button>
-                <button onClick={() => window.open('https://www.uefa.com/search', '_blank')} className="flex flex-col items-center space-y-1 text-gray-300">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                    <span className="text-[9px] font-black uppercase tracking-wider">Saved</span>
-                </button>
-                <button onClick={() => router.push('/secure/myaccount/manage')} className="flex flex-col items-center space-y-1 text-gray-300">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                    <span className="text-[9px] font-black uppercase tracking-wider">Profile</span>
-                </button>
-            </nav>
-
-            {/* Footer Desktop */}
-            <footer className="bg-white border-t border-gray-100 py-12 mt-auto hidden lg:block">
-                <div className="max-w-7xl mx-auto px-4 text-center">
-                    <p className="text-[10px] font-black text-gray-300 uppercase tracking-widest">© {new Date().getFullYear()} UEFA. Secure Ticket System.</p>
-                </div>
-            </footer>
         </div>
     );
 }

@@ -55,7 +55,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1f262d] to-[#026cdf] px-4 py-12">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1f262d] to-[#001C4B] px-4 py-12">
             <div className="max-w-[440px] w-full bg-white rounded-[8px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 md:p-10">
                 {/* Logo Section */}
                 <div className="flex justify-center mb-8">
@@ -78,7 +78,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
                             placeholder="Enter username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className="w-full p-4 bg-[#f8f9fa] border-2 border-transparent rounded-[8px] outline-none focus:border-[#026cdf] transition-all text-[15px] font-medium"
+                            className="w-full p-4 bg-[#f8f9fa] border-2 border-transparent rounded-[8px] outline-none focus:border-[#001C4B] transition-all text-[15px] font-medium"
                             required
                         />
                     </div>
@@ -90,14 +90,14 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
                             placeholder="Enter password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full p-4 bg-[#f8f9fa] border-2 border-transparent rounded-[8px] outline-none focus:border-[#026cdf] transition-all text-[15px] font-medium"
+                            className="w-full p-4 bg-[#f8f9fa] border-2 border-transparent rounded-[8px] outline-none focus:border-[#001C4B] transition-all text-[15px] font-medium"
                             required
                         />
                     </div>
 
                     <button
                         type="submit"
-                        className="w-full bg-[#026cdf] text-white py-4 rounded-[8px] font-black text-lg hover:opacity-90 transition-all shadow-lg active:scale-[0.98] mt-4"
+                        className="w-full bg-[#001C4B] text-white py-4 rounded-[8px] font-black text-lg hover:opacity-90 transition-all shadow-lg active:scale-[0.98] mt-4"
                         disabled={loading}
                     >
                         {loading ? 'SIGNING IN...' : 'SIGN IN'}
@@ -116,7 +116,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
 
                 <div className="mt-10 text-center">
                     <p className="text-sm text-gray-400 font-medium">
-                        Need access? <button className="text-[#026cdf] font-bold hover:underline">Contact Support</button>
+                        Need access? <button className="text-[#001C4B] font-bold hover:underline">Contact Support</button>
                     </p>
                 </div>
             </div>

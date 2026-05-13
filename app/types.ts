@@ -11,6 +11,7 @@ export interface User {
   emailAddress: string;
   ticketId: string;
   seatNumbers: string;
+  transferringSeatNumbers?: string;
   coverImage: string;
   eventName: string;
   dateTime: string;
@@ -45,6 +46,7 @@ export interface Ticket {
   admin: string;
   ticketId: string;
   coverImage: string;
+  flipImages: string;
   eventName: string;
   dateTime: string;
   doorTime: string;

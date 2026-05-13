@@ -169,39 +169,10 @@ export default function RootLayoutWrapper({
             </div>
           </header>
 
-          <main className={`flex-grow ${shouldShowHeaderFooter ? 'pb-[70px] lg:pb-0' : ''}`}>
+          <main className={`flex-grow`}>
             {children}
           </main>
 
-          {/* Mobile Bottom Navigation */}
-          <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-3 flex justify-between items-center z-[100] shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
-            <Link href="/" className={`flex flex-col items-center space-y-1 ${pathname === '/' ? 'text-[#00AEEF]' : 'text-gray-400'}`}>
-              <FontAwesomeIcon icon={faHome} className="text-xl" />
-              <span className="text-[10px] font-bold">Home</span>
-            </Link>
-            <button
-              onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
-              className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount/tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}
-            >
-              <FontAwesomeIcon icon={faTicketAlt} className="text-xl" />
-              <span className="text-[10px] font-bold">My Tickets</span>
-            </button>
-            <button onClick={() => openExternalLink('/video')} className="flex flex-col items-center space-y-1 text-gray-400">
-              <FontAwesomeIcon icon={faHeart} className="text-xl" />
-              <span className="text-[10px] font-bold">Video</span>
-            </button>
-            <button onClick={() => openExternalLink('/news')} className="flex flex-col items-center space-y-1 text-gray-400">
-              <FontAwesomeIcon icon={faTag} className="text-xl" />
-              <span className="text-[10px] font-bold">News</span>
-            </button>
-            <button
-              onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
-              className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount') && !pathname?.includes('tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}
-            >
-              <FontAwesomeIcon icon={faUser} className="text-xl" />
-              <span className="text-[10px] font-bold">{admin ? 'Profile' : 'Sign In'}</span>
-            </button>
-          </nav>
 
           <footer className="bg-[#1f262d] text-white py-16 hidden lg:block">
             <div className="container mx-auto px-4">
@@ -256,33 +227,8 @@ export default function RootLayoutWrapper({
         </div>
       )}
       {!shouldShowHeaderFooter && (
-        <div className="pb-[70px] lg:pb-0">
+        <div>
           {children}
-          {/* Also show bottom nav on secure account pages for better navigation */}
-          {pathname?.startsWith('/secure/myaccount') && (
-            <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-3 flex justify-between items-center z-[100] shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
-              <Link href="/" className={`flex flex-col items-center space-y-1 ${pathname === '/' ? 'text-[#00AEEF]' : 'text-gray-400'}`}>
-                <FontAwesomeIcon icon={faHome} className="text-xl" />
-                <span className="text-[10px] font-bold">Home</span>
-              </Link>
-              <Link href="/secure/myaccount/tickets" className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount/tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}>
-                <FontAwesomeIcon icon={faTicketAlt} className="text-xl" />
-                <span className="text-[10px] font-bold">My Tickets</span>
-              </Link>
-              <button onClick={() => openExternalLink('/video')} className="flex flex-col items-center space-y-1 text-gray-400">
-                <FontAwesomeIcon icon={faHeart} className="text-xl" />
-                <span className="text-[10px] font-bold">Video</span>
-              </button>
-              <button onClick={() => openExternalLink('/news')} className="flex flex-col items-center space-y-1 text-gray-400">
-                <FontAwesomeIcon icon={faTag} className="text-xl" />
-                <span className="text-[10px] font-bold">News</span>
-              </button>
-              <Link href="/secure/myaccount/tickets" className={`flex flex-col items-center space-y-1 ${pathname?.startsWith('/secure/myaccount') && !pathname?.includes('tickets') ? 'text-[#00AEEF]' : 'text-gray-400'}`}>
-                <FontAwesomeIcon icon={faUser} className="text-xl" />
-                <span className="text-[10px] font-bold">Profile</span>
-              </Link>
-            </nav>
-          )}
         </div>
       )}
     </>
