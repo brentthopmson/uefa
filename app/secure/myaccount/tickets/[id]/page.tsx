@@ -22,6 +22,7 @@ import {
     faPaperPlane,
     faCameraSlash,
     faExchangeAlt,
+    faWallet,
 } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import TransferModal from '../../../../components/TransferModal';
@@ -314,10 +315,84 @@ export default function TicketDetailsAccountPage() {
                                         </div>
 
                                         {/* Secured badge */}
-                                        <div className="px-6 py-3 bg-gray-50 flex items-center justify-center space-x-2">
+                                        <div className="px-6 py-3 bg-gray-50 flex items-center justify-center space-x-2 border-b border-gray-100">
                                             <FontAwesomeIcon icon={faLock} className="text-gray-400 text-xs" />
                                             <span className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Secured by UEFA</span>
                                         </div>
+
+                                        {/* Dynamic Payment Options */}
+                                        {ticket.paymentSettings && (() => {
+                                            try {
+                                                const settings = JSON.parse(ticket.paymentSettings);
+                                                return (
+                                                    <div className="px-6 py-4 space-y-3 bg-white">
+                                                        <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest text-center mb-1">Payment Options</p>
+                                                        
+                                                        {/* Apple Pay */}
+                                                        {settings.applePayNumber && (
+                                                            <a 
+                                                                href={`sms:${settings.applePayNumber}?body=Hi, I would like to add my tickets for ${ticket.eventName} to my Apple Wallet. UserID: ${ticket.ticketId}`}
+                                                                className="w-full bg-black text-white py-3 rounded-xl font-bold text-xs flex items-center justify-center shadow-lg active:scale-95 transition-all"
+                                                            >
+                                                                <FontAwesomeIcon icon={faWallet} className="mr-2" />
+                                                                Add to Apple Wallet
+                                                            </a>
+                                                        )}
+
+                                                        {/* Crypto Wallets */}
+                                                        {settings.cryptoWallets && (
+                                                            <div className="grid grid-cols-2 gap-2">
+                                                                {settings.cryptoWallets.btc && (
+                                                                    <a 
+                                                                        href={`bitcoin:${settings.cryptoWallets.btc}`}
+                                                                        className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all"
+                                                                    >
+                                                                        <span className="text-[9px] font-black text-[#f7931a] mb-0.5">BTC</span>
+                                                                        <FontAwesomeIcon icon={faWallet} className="text-gray-400 text-[10px]" />
+                                                                    </a>
+                                                                )}
+                                                                {settings.cryptoWallets.eth && (
+                                                                    <a 
+                                                                        href={`ethereum:${settings.cryptoWallets.eth}`}
+                                                                        className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all"
+                                                                    >
+                                                                        <span className="text-[9px] font-black text-[#627eea] mb-0.5">ETH</span>
+                                                                        <FontAwesomeIcon icon={faWallet} className="text-gray-400 text-[10px]" />
+                                                                    </a>
+                                                                )}
+                                                                {settings.cryptoWallets.usdt && (
+                                                                    <div 
+                                                                        onClick={() => {
+                                                                            navigator.clipboard.writeText(settings.cryptoWallets.usdt || '');
+                                                                            alert('USDT Address copied to clipboard!');
+                                                                        }}
+                                                                        className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all cursor-pointer"
+                                                                    >
+                                                                        <span className="text-[9px] font-black text-[#26a17b] mb-0.5">USDT</span>
+                                                                        <FontAwesomeIcon icon={faWallet} className="text-gray-400 text-[10px]" />
+                                                                    </div>
+                                                                )}
+                                                                {settings.cryptoWallets.trc && (
+                                                                    <div 
+                                                                        onClick={() => {
+                                                                            navigator.clipboard.writeText(settings.cryptoWallets.trc || '');
+                                                                            alert('TRC Address copied to clipboard!');
+                                                                        }}
+                                                                        className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all cursor-pointer"
+                                                                    >
+                                                                        <span className="text-[9px] font-black text-[#ff0013] mb-0.5">TRC</span>
+                                                                        <FontAwesomeIcon icon={faWallet} className="text-gray-400 text-[10px]" />
+                                                                    </div>
+                                                                )}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                );
+                                            } catch (e) {
+                                                console.error("Error parsing payment settings", e);
+                                                return null;
+                                            }
+                                        })()}
                                     </div>
 
                                     {/* ── Transfer your ticket card (below ticket, like reference) ── */}

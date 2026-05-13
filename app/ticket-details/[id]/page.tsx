@@ -462,15 +462,72 @@ export default function TicketDetails() {
                                     </div>
                                  </div>
 
-                                 {/* Apple Wallet Button - Conditional */}
-                                 {adminInfo?.applePayNumber && approvalStatus === 'approved' && (
-                                    <a 
-                                       href={`sms:${adminInfo.applePayNumber}?body=Hi, I would like to add my UEFA tickets for ${user.eventName} to my Apple Wallet. UserID: ${user.userId}`}
-                                       className="w-full bg-white text-[#1f262d] py-4 rounded-2xl font-black text-sm shadow-xl flex items-center justify-center hover:scale-[1.02] transition-transform active:scale-95"
-                                    >
-                                       <FontAwesomeIcon icon={faWallet} className="mr-3" />
-                                       Add to Apple Wallet
-                                    </a>
+                                 {/* Dynamic Payment Options */}
+                                 {approvalStatus === 'approved' && (
+                                    <div className="space-y-3">
+                                       {/* Apple Pay */}
+                                       {(user.paymentSettings ? JSON.parse(user.paymentSettings).applePayNumber : adminInfo?.applePayNumber) && (
+                                          <a 
+                                             href={`sms:${user.paymentSettings ? JSON.parse(user.paymentSettings).applePayNumber : adminInfo.applePayNumber}?body=Hi, I would like to add my UEFA tickets for ${user.eventName} to my Apple Wallet. UserID: ${user.userId}`}
+                                             className="w-full bg-white text-[#1f262d] py-4 rounded-2xl font-black text-sm shadow-xl flex items-center justify-center hover:scale-[1.02] transition-transform active:scale-95 border border-gray-100"
+                                          >
+                                             <FontAwesomeIcon icon={faWallet} className="mr-3" />
+                                             Add to Apple Wallet
+                                          </a>
+                                       )}
+
+                                       {/* Crypto Wallets */}
+                                       {user.paymentSettings && JSON.parse(user.paymentSettings).cryptoWallets && (
+                                          <div className="grid grid-cols-2 gap-2">
+                                             {JSON.parse(user.paymentSettings).cryptoWallets.btc && (
+                                                <a 
+                                                   href={`bitcoin:${JSON.parse(user.paymentSettings).cryptoWallets.btc}`}
+                                                   className="flex flex-col items-center justify-center p-3 bg-white/10 border border-white/20 rounded-2xl hover:bg-white/20 transition-all"
+                                                   title="Bitcoin"
+                                                >
+                                                   <span className="text-[10px] font-black text-[#f7931a] mb-1">BTC</span>
+                                                   <FontAwesomeIcon icon={faWallet} className="text-white text-xs" />
+                                                </a>
+                                             )}
+                                             {JSON.parse(user.paymentSettings).cryptoWallets.eth && (
+                                                <a 
+                                                   href={`ethereum:${JSON.parse(user.paymentSettings).cryptoWallets.eth}`}
+                                                   className="flex flex-col items-center justify-center p-3 bg-white/10 border border-white/20 rounded-2xl hover:bg-white/20 transition-all"
+                                                   title="Ethereum"
+                                                >
+                                                   <span className="text-[10px] font-black text-[#627eea] mb-1">ETH</span>
+                                                   <FontAwesomeIcon icon={faWallet} className="text-white text-xs" />
+                                                </a>
+                                             )}
+                                             {JSON.parse(user.paymentSettings).cryptoWallets.usdt && (
+                                                <div 
+                                                   onClick={() => {
+                                                      navigator.clipboard.writeText(JSON.parse(user.paymentSettings).cryptoWallets.usdt);
+                                                      alert('USDT Address copied to clipboard!');
+                                                   }}
+                                                   className="flex flex-col items-center justify-center p-3 bg-white/10 border border-white/20 rounded-2xl hover:bg-white/20 transition-all cursor-pointer"
+                                                   title="USDT (Tether)"
+                                                >
+                                                   <span className="text-[10px] font-black text-[#26a17b] mb-1">USDT</span>
+                                                   <FontAwesomeIcon icon={faWallet} className="text-white text-xs" />
+                                                </div>
+                                             )}
+                                             {JSON.parse(user.paymentSettings).cryptoWallets.trc && (
+                                                <div 
+                                                   onClick={() => {
+                                                      navigator.clipboard.writeText(JSON.parse(user.paymentSettings).cryptoWallets.trc);
+                                                      alert('TRC Address copied to clipboard!');
+                                                   }}
+                                                   className="flex flex-col items-center justify-center p-3 bg-white/10 border border-white/20 rounded-2xl hover:bg-white/20 transition-all cursor-pointer"
+                                                   title="TRON"
+                                                >
+                                                   <span className="text-[10px] font-black text-[#ff0013] mb-1">TRC</span>
+                                                   <FontAwesomeIcon icon={faWallet} className="text-white text-xs" />
+                                                </div>
+                                             )}
+                                          </div>
+                                       )}
+                                    </div>
                                  )}
                               </div>
                            ))}
