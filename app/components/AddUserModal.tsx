@@ -131,7 +131,8 @@ const AddUserModal: React.FC<AddUserModalProps> = ({
       payload.append('fullName', formData.fullName);
       payload.append('phoneNumber', formData.phoneNumber);
       payload.append('emailAddress', formData.emailAddress);
-      payload.append('transferringSeatNumbers', formData.transferringSeatNumbers);
+      // Backend handles original seats; we only send the ones being transferred
+      payload.append('transferringSeatNumbers', formData.transferringSeatNumbers); 
       payload.append('ticketId', selectedTicketId);
       payload.append('timestamp', timestamp);
       payload.append('admin', admin.username);
