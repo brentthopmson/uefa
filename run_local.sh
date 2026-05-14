@@ -2,7 +2,7 @@
 
 # Configuration
 APP_DIR=$(pwd)
-PORT=3002
+PORT=3000
 
 echo "----------------------------------------"
 echo "Starting UEFA Ticket Portal..."

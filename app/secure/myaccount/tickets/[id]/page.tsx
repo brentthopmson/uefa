@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { useRouter, useParams } from 'next/navigation';
-import { useUser } from '../../../../UserContext';
-import { Ticket } from '../../../../types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState, useEffect, useRef } from "react";
+import { useRouter, useParams } from "next/navigation";
+import { useUser } from "../../../../UserContext";
+import { Ticket } from "../../../../types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faTicketAlt,
     faUserCircle,
@@ -13,8 +13,6 @@ import {
     faQuestionCircle,
     faSignOutAlt,
     faBars,
-    faTimes,
-    faLock,
     faChevronLeft,
     faChevronRight,
     faCalendarAlt,
@@ -23,9 +21,11 @@ import {
     faCameraSlash,
     faExchangeAlt,
     faWallet,
-} from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
-import TransferModal from '../../../../components/TransferModal';
+    faLock,
+} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Sidebar from "../../../../components/Sidebar";
+import TransferModal from "../../../../components/TransferModal";
 
 function FlipCarousel({ images }: { images: string[] }) {
     const [flipIdx, setFlipIdx] = useState(0);
@@ -47,13 +47,13 @@ function FlipCarousel({ images }: { images: string[] }) {
                     key={i}
                     src={url}
                     alt={`Event view ${i + 1}`}
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${i === flipIdx ? 'opacity-100' : 'opacity-0'}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${i === flipIdx ? "opacity-100" : "opacity-0"}`}
                 />
             ))}
             {images.length > 1 && (
                 <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1.5">
                     {images.map((_, i) => (
-                        <div key={i} className={`w-1.5 h-1.5 rounded-full transition-all ${i === flipIdx ? 'bg-white w-3' : 'bg-white/50'}`} />
+                        <div key={i} className={`w-1.5 h-1.5 rounded-full transition-all ${i === flipIdx ? "bg-white w-3" : "bg-white/50"}`} />
                     ))}
                 </div>
             )}
@@ -82,7 +82,7 @@ export default function TicketDetailsAccountPage() {
 
     useEffect(() => {
         const adminUsername = sessionStorage.getItem("loggedInAdmin");
-        const adminData = sessionStorage.getItem('adminData');
+        const adminData = sessionStorage.getItem("adminData");
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
@@ -91,10 +91,10 @@ export default function TicketDetailsAccountPage() {
                 if (allTickets.length === 0) fetchAllTickets();
             } catch (e) {
                 console.error("Error parsing admin data", e);
-                router.replace('/login');
+                router.replace("/login");
             }
         } else {
-            router.replace('/login');
+            router.replace("/login");
         }
     }, [setAdmin, router, allTickets.length, fetchAllTickets]);
 
@@ -110,26 +110,27 @@ export default function TicketDetailsAccountPage() {
         sessionStorage.removeItem("adminData");
         setAdmin(null);
         setTickets([]);
-        router.push('/login');
+        router.push("/login");
     };
 
     const sidebarItems = [
-        { icon: faTicketAlt, label: 'My Purchases', active: true, href: '/secure/myaccount/tickets' },
-        { icon: faExchangeAlt, label: 'Transfers', active: false, href: '/secure/myaccount/transfers' },
-        { icon: faUserCircle, label: 'Personal Details', active: false, href: '/secure/myaccount/personal-details' },
-        { icon: faCog, label: 'Account Settings', active: false, href: '#' },
-        { icon: faShieldAlt, label: 'Privacy', active: false, href: '#' },
-        { icon: faQuestionCircle, label: 'Help', active: false, href: '#' },
+        { icon: faTicketAlt, label: "My Purchases", active: true, href: "/secure/myaccount/tickets" },
+        { icon: faExchangeAlt, label: "Transfers", active: false, href: "/secure/myaccount/transfers" },
+        { icon: faUserCircle, label: "Personal Details", active: false, href: "/secure/myaccount/personal-details" },
+        { icon: faCog, label: "Account Settings", active: false, href: "/secure/myaccount/manage" },
+        { icon: faShieldAlt, label: "Privacy", active: false, href: "#" },
+        { icon: faQuestionCircle, label: "Help", active: false, href: "#" },
+        { icon: faSignOutAlt, label: "Sign Out", active: false, action: handleLogout },
     ];
 
     if (isSessionValid === null || !ticket) return null;
 
     const seats = ticket.seatNumbers
-        ? ticket.seatNumbers.split(',').map((s: string) => s.trim())
-        : [ticket.seat || 'N/A'];
+        ? ticket.seatNumbers.split(",").map((s: string) => s.trim())
+        : [ticket.seat || "N/A"];
 
     const flipImageList = ticket.flipImages
-        ? ticket.flipImages.split(',').map((s: string) => s.trim()).filter(Boolean)
+        ? ticket.flipImages.split(",").map((s: string) => s.trim()).filter(Boolean)
         : [];
 
     const nextSeat = () => { if (currentSeatIndex < seats.length - 1) setCurrentSeatIndex(p => p + 1); };
@@ -141,6 +142,12 @@ export default function TicketDetailsAccountPage() {
             {/* ── Header: deep blue bg, white text ── */}
             <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-2 sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
+                    <button 
+                        className="mr-4 lg:hidden text-2xl text-white/80"
+                        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                    >
+                        <FontAwesomeIcon icon={faBars} />
+                    </button>
                     {/* Left: If on first seat, go back to list. If on a subsequent seat, go to previous seat. */}
                     {currentSeatIndex > 0 ? (
                         <button onClick={prevSeat}
@@ -148,7 +155,7 @@ export default function TicketDetailsAccountPage() {
                             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
                         </button>
                     ) : (
-                        <button onClick={() => router.push('/secure/myaccount/tickets')} 
+                        <button onClick={() => router.push("/secure/myaccount/tickets")} 
                             className="w-8 h-8 flex items-center justify-center rounded-full text-white/80 hover:bg-white/10 transition-all">
                             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
                         </button>
@@ -157,12 +164,12 @@ export default function TicketDetailsAccountPage() {
                     {/* Center: Ticket label + dot indicators */}
                     <div className="text-center select-none">
                         <p className="text-[14px] font-black text-white tracking-wide">
-                            Ticket {currentSeatIndex + 1}{seats.length > 1 ? ` of ${seats.length}` : ''}
+                            Ticket {currentSeatIndex + 1}{seats.length > 1 ? ` of ${seats.length}` : ""}
                         </p>
                         {seats.length > 1 && (
                             <div className="flex justify-center space-x-1 mt-0.5">
                                 {seats.map((_: any, idx: number) => (
-                                    <div key={idx} className={`rounded-full transition-all duration-300 ${currentSeatIndex === idx ? 'w-3 h-1.5 bg-white' : 'w-1.5 h-1.5 bg-white/30'}`} />
+                                    <div key={idx} className={`rounded-full transition-all duration-300 ${currentSeatIndex === idx ? "w-3 h-1.5 bg-white" : "w-1.5 h-1.5 bg-white/30"}`} />
                                 ))}
                             </div>
                         )}
@@ -181,38 +188,12 @@ export default function TicketDetailsAccountPage() {
             </header>
 
             <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
-
-                {/* ── Sidebar ── */}
-                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:bg-transparent lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <div className="p-6 lg:p-0">
-                        <div className="lg:hidden flex justify-end mb-8">
-                            <button onClick={() => setIsSidebarOpen(false)} className="text-2xl"><FontAwesomeIcon icon={faTimes} /></button>
-                        </div>
-                        <nav className="space-y-1">
-                            {sidebarItems.map((item, i) => (
-                                item.href && item.href !== '#' ? (
-                                    <Link key={i} href={item.href}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </Link>
-                                ) : (
-                                    <button key={i}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </button>
-                                )
-                            ))}
-                        </nav>
-                        <div className="mt-12 pt-8 border-t border-gray-100">
-                            <Link href="/secure/myaccount/manage" className="flex items-center space-x-3 text-gray-400 hover:text-[#001C4B] transition-colors text-[10px] font-black uppercase tracking-widest">
-                                <FontAwesomeIcon icon={faLock} className="w-4" />
-                                <span>Admin Panel</span>
-                            </Link>
-                        </div>
-                    </div>
-                </aside>
+                <Sidebar
+                    sidebarItems={sidebarItems}
+                    isSidebarOpen={isSidebarOpen}
+                    onClose={() => setIsSidebarOpen(false)}
+                    adminUsername={admin?.username}
+                />
 
                 {/* ── Main ── */}
                 <main className="flex-1 pb-24 lg:pb-0">
@@ -245,7 +226,7 @@ export default function TicketDetailsAccountPage() {
                                                 <FlipCarousel images={flipImageList} />
                                             ) : (
                                                 <div className="w-full h-24 bg-gradient-to-r from-[#001C4B] to-[#002d6e] rounded-xl flex items-center justify-center mb-4">
-                                                    <p className="text-white font-black text-sm tracking-widest uppercase">{ticket.eventName || 'Event'}</p>
+                                                    <p className="text-white font-black text-sm tracking-widest uppercase">{ticket.eventName || "Event"}</p>
                                                 </div>
                                             )}
 
@@ -265,10 +246,10 @@ export default function TicketDetailsAccountPage() {
                                         {/* ── 4-column seat grid (Gate/Sector/Row/Seat) ── */}
                                         <div className="grid grid-cols-4 divide-x divide-gray-100 border-b border-gray-100">
                                             {[
-                                                { top: 'GATE', bottom: ticket.sectionNo || 'A2' },
-                                                { top: 'SECTOR', bottom: ticket.section || '—' },
-                                                { top: 'ROW', bottom: ticket.row || '—' },
-                                                { top: 'SEAT', bottom: seatNum },
+                                                { top: "GATE", bottom: ticket.sectionNo || "A2" },
+                                                { top: "SECTOR", bottom: ticket.section || "—" },
+                                                { top: "ROW", bottom: ticket.row || "—" },
+                                                { top: "SEAT", bottom: seatNum },
                                             ].map((col, ci) => (
                                                 <div key={ci} className="py-4 text-center">
                                                     <p className="text-[8px] font-black text-gray-400 uppercase tracking-wider leading-tight mb-1">{col.top}</p>
@@ -291,9 +272,9 @@ export default function TicketDetailsAccountPage() {
                                         {/* ── Info rows ── */}
                                         <div className="px-6 py-5 space-y-3 border-b border-gray-100">
                                             {[
-                                                { label: 'TICKET KEPT FOR', value: admin?.accountName || ticket.admin || 'Not assigned yet' },
-                                                { label: 'CATEGORY', value: ticket.section || 'Category 1 RV' },
-                                                { label: 'GATES OPEN AT (LOCAL TIME)', value: ticket.doorTime || '15:00' },
+                                                { label: "TICKET KEPT FOR", value: "Not assigned yet" },
+                                                { label: "CATEGORY", value: ticket.category || "Category 1 RV" },
+                                                { label: "GATES OPEN AT (LOCAL TIME)", value: ticket.doorTime || "15:00" },
                                             ].map((row, ri) => (
                                                 <div key={ri} className="flex justify-between items-center">
                                                     <span className="text-[10px] font-black text-gray-400 uppercase tracking-wider">{row.label}</span>
@@ -363,8 +344,8 @@ export default function TicketDetailsAccountPage() {
                                                                 {settings.cryptoWallets.usdt && (
                                                                     <div 
                                                                         onClick={() => {
-                                                                            navigator.clipboard.writeText(settings.cryptoWallets.usdt || '');
-                                                                            alert('USDT Address copied to clipboard!');
+                                                                            navigator.clipboard.writeText(settings.cryptoWallets.usdt || "");
+                                                                            alert("USDT Address copied to clipboard!");
                                                                         }}
                                                                         className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all cursor-pointer"
                                                                     >
@@ -375,8 +356,8 @@ export default function TicketDetailsAccountPage() {
                                                                 {settings.cryptoWallets.trc && (
                                                                     <div 
                                                                         onClick={() => {
-                                                                            navigator.clipboard.writeText(settings.cryptoWallets.trc || '');
-                                                                            alert('TRC Address copied to clipboard!');
+                                                                            navigator.clipboard.writeText(settings.cryptoWallets.trc || "");
+                                                                            alert("TRC Address copied to clipboard!");
                                                                         }}
                                                                         className="flex flex-col items-center justify-center p-2 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 transition-all cursor-pointer"
                                                                     >
@@ -421,7 +402,7 @@ export default function TicketDetailsAccountPage() {
                                     {/* Help button */}
                                     <div className="max-w-md mx-auto mt-3">
                                         <button
-                                            onClick={() => window.open('https://www.uefa.com/help', '_blank')}
+                                            onClick={() => window.open("https://www.uefa.com/help", "_blank")}
                                             className="w-full bg-white text-[#001C4B] border border-gray-200 py-4 rounded-xl font-black text-sm hover:bg-gray-50 transition-colors flex items-center justify-center space-x-2"
                                         >
                                             <FontAwesomeIcon icon={faQuestionCircle} />

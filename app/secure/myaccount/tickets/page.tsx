@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser } from '../../../UserContext';
 import TicketCard from '../../../components/TicketCard';
+import Sidebar from '../../../components/Sidebar';
 import { Ticket } from '../../../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -14,13 +15,9 @@ import {
     faQuestionCircle,
     faSignOutAlt,
     faBars,
-    faTimes,
-    faLock,
-    faChevronLeft,
     faExchangeAlt,
     faSearch
 } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 
 export default function MyTicketsPage() {
     const router = useRouter();
@@ -117,8 +114,8 @@ export default function MyTicketsPage() {
     const sidebarItems = [
         { icon: faTicketAlt, label: 'My Purchases', active: true, href: '/secure/myaccount/tickets' },
         { icon: faExchangeAlt, label: 'Transfers', active: false, href: '/secure/myaccount/transfers' },
-        { icon: faUserCircle, label: 'Personal Details', active: false, href: '#' },
-        { icon: faCog, label: 'Account Settings', active: false, href: '#' },
+        { icon: faUserCircle, label: 'Personal Details', active: false, href: '/secure/myaccount/personal-details' },
+        { icon: faCog, label: 'Account Settings', active: false, href: '/secure/myaccount/manage' },
         { icon: faShieldAlt, label: 'Privacy', active: false, href: '#' },
         { icon: faQuestionCircle, label: 'Help', active: false, href: '#' },
         { icon: faSignOutAlt, label: 'Sign Out', active: false, action: handleLogout },
@@ -133,7 +130,7 @@ export default function MyTicketsPage() {
             <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
-                        <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} className="text-xl" />
+                        <FontAwesomeIcon icon={faBars} className="text-xl" />
                     </button>
                     <h1 className="text-lg font-black text-white tracking-tight">My Purchases</h1>
                     <button onClick={handleLogout} className="text-white/80 hover:text-red-400 transition-colors p-1">
@@ -144,39 +141,13 @@ export default function MyTicketsPage() {
 
             <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
 
-                {/* ── Sidebar ── */}
-                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:bg-transparent lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <div className="p-6 lg:p-0">
-                        <div className="lg:hidden flex justify-end mb-8">
-                            <button onClick={() => setIsSidebarOpen(false)} className="text-2xl text-[#1f262d]">
-                                <FontAwesomeIcon icon={faTimes} />
-                            </button>
-                        </div>
-                        <nav className="space-y-1">
-                            {sidebarItems.map((item, i) => (
-                                item.href && item.href !== '#' ? (
-                                    <Link key={i} href={item.href}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </Link>
-                                ) : (
-                                    <button key={i} onClick={(item as any).action}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${(item as any).label === 'Sign Out' ? 'text-red-600 hover:bg-red-50' : (item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold')}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </button>
-                                )
-                            ))}
-                        </nav>
-                        <div className="mt-12 pt-8 border-t border-gray-100">
-                            <Link href="/secure/myaccount/manage" className="flex items-center space-x-3 text-gray-400 hover:text-[#001C4B] transition-colors text-[10px] font-black uppercase tracking-widest">
-                                <FontAwesomeIcon icon={faLock} className="w-4" />
-                                <span>Admin Panel</span>
-                            </Link>
-                        </div>
-                    </div>
-                </aside>
+                {/* ── Sidebar (shared component) ── */}
+                <Sidebar
+                    sidebarItems={sidebarItems}
+                    isSidebarOpen={isSidebarOpen}
+                    onClose={() => setIsSidebarOpen(false)}
+                    adminUsername={admin?.username}
+                />
 
                 {/* ── Main Content ── */}
                 <main className="flex-1 pb-24 lg:pb-0">

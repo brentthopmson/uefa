@@ -8,19 +8,18 @@ import {
     faUserCircle,
     faSignOutAlt,
     faBars,
-    faTimes,
     faTicketAlt,
     faCog,
     faShieldAlt,
     faQuestionCircle,
     faChevronLeft,
     faExchangeAlt,
-    faLock,
     faSave,
     faTimesCircle,
     faCheckCircle
 } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import Sidebar from '../../../components/Sidebar';
 
 const APP_SCRIPT_POST_URL = process.env.NEXT_PUBLIC_APP_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbxcoCDXcWlKPDbttlFf2eR_EeuMkfupy5dfgIOklM1ShEZ30gfD3wzZZOxkKV4xIWEl/exec";
 
@@ -78,6 +77,7 @@ export default function PersonalDetailsPage() {
         setMessage(null);
 
         try {
+            // Merge telegramId into adminSettings JSON
             let settingsObj: any = {};
             try { settingsObj = JSON.parse(formData.adminSettings); } catch (e) { settingsObj = {}; }
             settingsObj.telegramId = formData.telegramId;
@@ -132,72 +132,38 @@ export default function PersonalDetailsPage() {
     const sidebarItems = [
         { icon: faTicketAlt, label: 'My Purchases', active: false, href: '/secure/myaccount/tickets' },
         { icon: faExchangeAlt, label: 'Transfers', active: false, href: '/secure/myaccount/transfers' },
-        { icon: faUserCircle, label: 'Personal Details', active: true, href: '#' },
-        { icon: faCog, label: 'Account Settings', active: false, href: '#' },
+        { icon: faUserCircle, label: 'Personal Details', active: true, href: '/secure/myaccount/personal-details' },
+        { icon: faCog, label: 'Account Settings', active: false, href: '/secure/myaccount/manage' },
         { icon: faShieldAlt, label: 'Privacy', active: false, href: '#' },
         { icon: faQuestionCircle, label: 'Help', active: false, href: '#' },
+        { icon: faSignOutAlt, label: 'Sign Out', active: false, action: handleLogout },
     ];
 
     if (isSessionValid === null) return null;
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            {/* Fixed Header */}
-            <header className="bg-white text-[#001C4B] border-b border-gray-100 p-4 sticky top-0 z-50">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
-                    <div className="flex items-center">
-                        <button 
-                            className="mr-4 lg:hidden text-2xl text-[#001C4B]"
-                            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                        >
-                            <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
-                        </button>
-                        <div className="flex items-center cursor-pointer" onClick={() => router.push('/')}>
-                            <img src="/logo.png" alt="UEFA logo" className="h-[24px] w-auto md:h-[28px]" />
-                        </div>
-                    </div>
-                    <div className="flex items-center space-x-6">
-                        <span className="hidden md:block text-sm font-bold uppercase tracking-wider text-gray-500">Hi, {admin?.username}</span>
-                        <button onClick={handleLogout} className="text-sm font-black text-[#001C4B] hover:text-[#001C4B] transition-colors flex items-center">
-                            <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" /> Sign Out
-                        </button>
-                    </div>
+            {/* ── Header ── */}
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 sticky top-0 z-50">
+                <div className="max-w-7xl mx-auto flex items-center justify-between">
+                    <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
+                        <FontAwesomeIcon icon={isSidebarOpen ? faTimesCircle : faBars} className="text-xl" />
+                    </button>
+                    <h1 className="text-lg font-black text-white tracking-tight">Personal Details</h1>
+                    <button onClick={handleLogout} className="text-white/80 hover:text-red-400 transition-colors p-1">
+                        <FontAwesomeIcon icon={faSignOutAlt} className="text-xl" />
+                    </button>
                 </div>
             </header>
 
             {/* Scrollable Content Area */}
             <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8 overflow-y-auto">
-                {/* Sidebar - always white background */}
-                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <div className="p-6 lg:bg-white lg:rounded-2xl lg:shadow-sm lg:border lg:border-gray-100">
-                        <div className="lg:hidden flex justify-end mb-8">
-                            <button onClick={() => setIsSidebarOpen(false)} className="text-2xl"><FontAwesomeIcon icon={faTimes} /></button>
-                        </div>
-                        <nav className="space-y-1">
-                            {sidebarItems.map((item, i) => (
-                                item.href && item.href !== '#' ? (
-                                    <Link key={i} href={item.href}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </Link>
-                                ) : (
-                                    <button key={i}
-                                        className={`w-full text-left px-4 py-3 rounded-[12px] flex items-center space-x-3 transition-all ${item.active ? 'bg-[#001C4B] text-white font-black shadow-lg shadow-[#001C4B]/20' : 'text-[#1f262d] hover:bg-white hover:shadow-sm font-bold'}`}>
-                                        <FontAwesomeIcon icon={item.icon} className="w-5" />
-                                        <span>{item.label}</span>
-                                    </button>
-                                )
-                            ))}
-                        </nav>
-                        <div className="mt-12 pt-8 border-t border-gray-100">
-                            <Link href="/secure/myaccount/manage" className="flex items-center space-x-3 text-gray-400 hover:text-[#001C4B] transition-colors text-[10px] font-black uppercase tracking-widest">
-                                <FontAwesomeIcon icon={faLock} className="w-4" />
-                                <span>Admin Panel</span>
-                            </Link>
-                        </div>
-                    </div>
-                </aside>
+                <Sidebar
+                    sidebarItems={sidebarItems}
+                    isSidebarOpen={isSidebarOpen}
+                    onClose={() => setIsSidebarOpen(false)}
+                    adminUsername={admin?.username}
+                />
 
                 {/* Main Content */}
                 <main className="flex-1 pb-24 lg:pb-0">
@@ -214,7 +180,7 @@ export default function PersonalDetailsPage() {
                     {message && (
                         <div className={`mb-6 p-4 rounded-2xl flex items-center space-x-3 ${
                             message.type === 'success' 
-                                ? 'bg-[#001C4B]/5 border border-[#001C4B]/10 text-[#001C4B]' 
+                                ? 'bg-[#3b82f6]/5 border border-[#3b82f6]/10 text-[#3b82f6]' 
                                 : 'bg-red-50 border border-red-100 text-red-600'
                         }`}>
                             <FontAwesomeIcon icon={message.type === 'success' ? faCheckCircle : faTimesCircle} />
@@ -232,7 +198,7 @@ export default function PersonalDetailsPage() {
                                         name="accountName"
                                         value={formData.accountName}
                                         onChange={handleChange}
-                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#001C4B] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#3b82f6] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
                                         placeholder="Enter your account name"
                                     />
                                 </div>
@@ -244,7 +210,7 @@ export default function PersonalDetailsPage() {
                                         name="accountEmail"
                                         value={formData.accountEmail}
                                         onChange={handleChange}
-                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#001C4B] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#3b82f6] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
                                         placeholder="Enter your account email"
                                     />
                                 </div>
@@ -256,33 +222,27 @@ export default function PersonalDetailsPage() {
                                         name="accountStateCountry"
                                         value={formData.accountStateCountry}
                                         onChange={handleChange}
-                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#001C4B] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#3b82f6] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
                                         placeholder="Enter your state or country"
                                     />
                                 </div>
 
-                                <div>
-                                    <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Telegram ID</label>
-                                    <input
-                                        type="text"
-                                        name="telegramId"
-                                        value={formData.telegramId}
-                                        onChange={handleChange}
-                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#001C4B] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
-                                        placeholder="Enter your Telegram ID"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Admin Settings (JSON)</label>
-                                    <textarea
-                                        name="adminSettings"
-                                        value={formData.adminSettings}
-                                        onChange={handleChange}
-                                        rows={4}
-                                        className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#001C4B] focus:bg-white outline-none transition-all font-bold text-[#1f262d] text-sm font-mono"
-                                        placeholder="{}"
-                                    ></textarea>
+                                {/* Admin Settings Card */}
+                                <div className="bg-white rounded-[24px] shadow-sm border border-gray-100 overflow-hidden max-w-2xl mt-6">
+                                    <div className="p-8">
+                                        <h2 className="text-2xl font-black text-[#001C4B] mb-6">Admin Settings</h2>
+                                        <div>
+                                            <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Telegram ID</label>
+                                            <input
+                                                type="text"
+                                                name="telegramId"
+                                                value={formData.telegramId}
+                                                onChange={handleChange}
+                                                className="w-full p-4 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#3b82f6] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+                                                placeholder="Enter your Telegram ID"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="pt-4 border-t border-gray-100">

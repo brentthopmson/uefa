@@ -167,6 +167,17 @@ const UpdateTicketModal: React.FC<UpdateTicketModalProps> = ({ ticket, onClose }
                 className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
               />
             </div>
+
+            <div>
+              <label className="block text-gray-700 dark:text-gray-300 mb-1">Category</label>
+              <input
+                type="text"
+                name="category"
+                value={formData.category || ''}
+                onChange={handleChange}
+                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+              />
+            </div>
             
             <div>
               <label className="block text-gray-700 dark:text-gray-300 mb-1">Row*</label>
