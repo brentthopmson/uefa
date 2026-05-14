@@ -49,7 +49,7 @@ export default function TransfersPage() {
     const sidebarItems = [
         { icon: faTicketAlt, label: 'My Purchases', active: false, href: '/secure/myaccount/tickets' },
         { icon: faExchangeAlt, label: 'Transfers', active: true, href: '/secure/myaccount/transfers' },
-        { icon: faUser, label: 'Personal Details', active: false, href: '#' },
+        { icon: faUser, label: 'Personal Details', active: false, href: '/secure/myaccount/personal-details' },
         { icon: faLock, label: 'Privacy', active: false, href: '#' },
         { icon: faSearch, label: 'Help', active: false, href: '#' },
         { icon: faSignOutAlt, label: 'Sign Out', active: false, action: handleLogout },
@@ -138,7 +138,7 @@ export default function TransfersPage() {
             <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
 
                 {/* ── Sidebar ── */}
-                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:bg-transparent lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <aside className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:inset-auto lg:w-64 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className="p-6 lg:p-0">
                         <div className="lg:hidden flex justify-end mb-8">
                             <button onClick={() => setIsSidebarOpen(false)} className="text-2xl text-[#1f262d]">

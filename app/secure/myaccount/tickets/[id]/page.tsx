@@ -116,7 +116,7 @@ export default function TicketDetailsAccountPage() {
     const sidebarItems = [
         { icon: faTicketAlt, label: 'My Purchases', active: true, href: '/secure/myaccount/tickets' },
         { icon: faExchangeAlt, label: 'Transfers', active: false, href: '/secure/myaccount/transfers' },
-        { icon: faUserCircle, label: 'Personal Details', active: false, href: '#' },
+        { icon: faUserCircle, label: 'Personal Details', active: false, href: '/secure/myaccount/personal-details' },
         { icon: faCog, label: 'Account Settings', active: false, href: '#' },
         { icon: faShieldAlt, label: 'Privacy', active: false, href: '#' },
         { icon: faQuestionCircle, label: 'Help', active: false, href: '#' },
@@ -291,7 +291,7 @@ export default function TicketDetailsAccountPage() {
                                         {/* ── Info rows ── */}
                                         <div className="px-6 py-5 space-y-3 border-b border-gray-100">
                                             {[
-                                                { label: 'TICKET KEPT FOR', value: ticket.admin || 'Not assigned yet' },
+                                                { label: 'TICKET KEPT FOR', value: admin?.accountName || ticket.admin || 'Not assigned yet' },
                                                 { label: 'CATEGORY', value: ticket.section || 'Category 1 RV' },
                                                 { label: 'GATES OPEN AT (LOCAL TIME)', value: ticket.doorTime || '15:00' },
                                             ].map((row, ri) => (
