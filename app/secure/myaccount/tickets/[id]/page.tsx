@@ -12,7 +12,6 @@ import {
     faShieldAlt,
     faQuestionCircle,
     faSignOutAlt,
-    faBars,
     faChevronLeft,
     faChevronRight,
     faCalendarAlt,
@@ -24,7 +23,6 @@ import {
     faLock,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Sidebar from "../../../../components/Sidebar";
 import TransferModal from "../../../../components/TransferModal";
 
 function FlipCarousel({ images }: { images: string[] }) {
@@ -76,7 +74,6 @@ export default function TicketDetailsAccountPage() {
 
     const [ticket, setTicket] = useState<Ticket | null>(null);
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [currentSeatIndex, setCurrentSeatIndex] = useState(0);
     const [isTransferModalOpen, setIsTransferModalOpen] = useState(false);
 
@@ -113,15 +110,7 @@ export default function TicketDetailsAccountPage() {
         router.push("/login");
     };
 
-    const sidebarItems = [
-        { icon: faTicketAlt, label: "My Purchases", active: true, href: "/secure/myaccount/tickets" },
-        { icon: faExchangeAlt, label: "Transfers", active: false, href: "/secure/myaccount/transfers" },
-        { icon: faUserCircle, label: "Personal Details", active: false, href: "/secure/myaccount/personal-details" },
-        { icon: faCog, label: "Account Settings", active: false, href: "/secure/myaccount/manage" },
-        { icon: faShieldAlt, label: "Privacy", active: false, href: "#" },
-        { icon: faQuestionCircle, label: "Help", active: false, href: "#" },
-        { icon: faSignOutAlt, label: "Sign Out", active: false, action: handleLogout },
-    ];
+
 
     if (isSessionValid === null || !ticket) return null;
 
@@ -142,12 +131,7 @@ export default function TicketDetailsAccountPage() {
             {/* ── Header: deep blue bg, white text ── */}
             <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-2 sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
-                    <button 
-                        className="mr-4 lg:hidden text-2xl text-white/80"
-                        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                    >
-                        <FontAwesomeIcon icon={faBars} />
-                    </button>
+
                     {/* Left: If on first seat, go back to list. If on a subsequent seat, go to previous seat. */}
                     {currentSeatIndex > 0 ? (
                         <button onClick={prevSeat}
@@ -187,14 +171,7 @@ export default function TicketDetailsAccountPage() {
                 </div>
             </header>
 
-            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
-                <Sidebar
-                    sidebarItems={sidebarItems}
-                    isSidebarOpen={isSidebarOpen}
-                    onClose={() => setIsSidebarOpen(false)}
-                    adminUsername={admin?.username}
-                />
-
+            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col py-8 px-4 gap-8">
                 {/* ── Main ── */}
                 <main className="flex-1 pb-24 lg:pb-0">
 
