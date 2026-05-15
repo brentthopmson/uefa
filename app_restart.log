@@ -98,3 +98,647 @@
 [0] ./app/secure/myaccount/tickets/[id]/page.tsx
 [0] 
 [0] - [33mwarn[39m metadata.metadataBase is not set for resolving social open graph or twitter images, fallbacks to "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/tickets/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/transfers/[id]/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] - [36mwait[39m compiling...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] 
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [36mwait[39m compiling /secure/myaccount/personal-details/page (client and server)...
+[0] - [36mwait[39m compiling /secure/myaccount/manage/page (client and server)...
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] - [33mwarn[39m ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] Attempted import error: 'faCameraSlash' is not exported from '@fortawesome/free-solid-svg-icons' (imported as 'faCameraSlash').
+[0] 
+[0] Import trace for requested module:
+[0] ./app/secure/myaccount/tickets/[id]/page.tsx
+[0] 
+[0] 
+[0] 
+[0] 

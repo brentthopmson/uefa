@@ -127,7 +127,7 @@ export default function MyTicketsPage() {
         <div className="min-h-screen bg-[#001C4B] flex flex-col font-sans">
 
             {/* ── Header: nav hamburger on left, title centered ── */}
-            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 sticky top-0 z-50">
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 fixed top-0 left-0 right-0 z-50 w-full">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
                         <FontAwesomeIcon icon={faBars} className="text-xl" />
@@ -139,7 +139,7 @@ export default function MyTicketsPage() {
                 </div>
             </header>
 
-            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8">
+            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row pt-[72px] lg:pt-[72px] pb-8 px-4 gap-8">
 
                 {/* ── Sidebar (shared component) ── */}
                 <Sidebar

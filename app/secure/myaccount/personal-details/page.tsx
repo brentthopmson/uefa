@@ -167,15 +167,7 @@ export default function PersonalDetailsPage() {
 
                 {/* Main Content */}
                 <main className="flex-1 pb-24 lg:pb-0">
-                    <button 
-                        onClick={() => router.push('/secure/myaccount/tickets')}
-                        className="flex items-center text-[#001C4B] font-black mb-8 hover:opacity-70 transition-opacity"
-                    >
-                        <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
-                        Back to My Purchases
-                    </button>
 
-                    <h1 className="text-3xl font-black text-[#001C4B] mb-8">Personal Details</h1>
 
                     {message && (
                         <div className={`mb-6 p-4 rounded-2xl flex items-center space-x-3 ${
