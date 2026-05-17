@@ -23,48 +23,51 @@ export default function ManageDashboard() {
         setUsers,
         setTickets,
         setAdmin,
-        setLoading
+        setLoading,
+        setLoggedInAdmin
     } = useUser();
 
-    const [loggedInAdmin, setLoggedInAdmin] = useState<string | null>(null);
+    const [localAdmin, setLocalAdmin] = useState<string | null>(null);
     const [users, setFilteredUsers] = useState<User[]>([]);
     const [tickets, setFilteredTickets] = useState<Ticket[]>([]);
     const [activeTab, setActiveTab] = useState<'transfers' | 'tickets' | 'customers'>('transfers');
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
 
     useEffect(() => {
-        const adminUsername = sessionStorage.getItem("loggedInAdmin");
-        const adminData = sessionStorage.getItem('adminData');
+        const adminUsername = localStorage.getItem("loggedInAdmin");
+        const adminData = localStorage.getItem('adminData');
     
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
                 setAdmin(parsedAdminData);
                 setLoggedInAdmin(adminUsername);
+                setLocalAdmin(adminUsername);
                 setIsSessionValid(true);
                 fetchAllUsers();
                 fetchAllTickets();
             } catch (e) {
                 console.error("Error parsing admin data", e);
-                sessionStorage.removeItem('adminData');
-                sessionStorage.removeItem('loggedInAdmin');
+                localStorage.removeItem('adminData');
+                localStorage.removeItem('loggedInAdmin');
                 setAdmin(null);
                 setLoggedInAdmin(null);
+                setLocalAdmin(null);
                 setIsSessionValid(false);
             }
         } else {
             setIsSessionValid(false);
         }
-    }, [setAdmin, fetchAllUsers, fetchAllTickets]);
+    }, [setAdmin, fetchAllUsers, fetchAllTickets, setLoggedInAdmin]);
 
     useEffect(() => {
-        if (isSessionValid === true && loggedInAdmin && Array.isArray(allUsers)) {
-            const filteredUsers = allUsers.filter((u) => u.admin === loggedInAdmin);
+        if (isSessionValid === true && localAdmin && Array.isArray(allUsers)) {
+            const filteredUsers = allUsers.filter((u) => u.admin === localAdmin);
             setFilteredUsers(filteredUsers);
         } else {
             setFilteredUsers([]);
         }
-    }, [allUsers, loggedInAdmin, isSessionValid]);
+    }, [allUsers, localAdmin, isSessionValid]);
     
     useEffect(() => {
         if (isSessionValid === false) {
@@ -73,28 +76,29 @@ export default function ManageDashboard() {
     }, [isSessionValid, router]);
     
     useEffect(() => {
-        if (isSessionValid === true && loggedInAdmin && Array.isArray(allTickets)) {
-            const filteredTickets = allTickets.filter((t) => t.admin === loggedInAdmin);
+        if (isSessionValid === true && localAdmin && Array.isArray(allTickets)) {
+            const filteredTickets = allTickets.filter((t) => t.admin === localAdmin);
             setFilteredTickets(filteredTickets);
         } else {
             setFilteredTickets([]);
         }
-    }, [allTickets, loggedInAdmin, isSessionValid]);
+    }, [allTickets, localAdmin, isSessionValid]);
 
     const handleLogout = () => {
-        sessionStorage.removeItem("loggedInAdmin");
-        sessionStorage.removeItem("adminData");
+        localStorage.removeItem("loggedInAdmin");
+        localStorage.removeItem("adminData");
         setLoggedInAdmin(null);
+        setLocalAdmin(null);
         setAdmin(null);
         setLoading(false);
         setUsers([]);
         setTickets([]);
         setIsSessionValid(false);
-        router.push('/admin');
+        router.push('/secure/login');
     };
 
-    if (isSessionValid === false || loggedInAdmin === null || admin === null) {
-        return <AdminLogin setLoggedInAdmin={setLoggedInAdmin} setUsers={setFilteredUsers} />;
+    if (isSessionValid === false || localAdmin === null || admin === null) {
+        return <AdminLogin setLoggedInAdmin={setLocalAdmin} setUsers={setFilteredUsers} />;
     }
 
     return (

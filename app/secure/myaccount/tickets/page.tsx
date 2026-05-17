@@ -28,10 +28,11 @@ export default function MyTicketsPage() {
         setAdmin,
         setLoading,
         setUsers,
-        setTickets
+        setTickets,
+        setLoggedInAdmin
     } = useUser();
 
-    const [loggedInAdmin, setLoggedInAdmin] = useState<string | null>(null);
+    const [localAdmin, setLocalAdmin] = useState<string | null>(null);
     const [filteredTickets, setFilteredTickets] = useState<Ticket[]>([]);
     const [activeTab, setActiveTab] = useState<'upcoming' | 'past'>('upcoming');
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
@@ -39,13 +40,14 @@ export default function MyTicketsPage() {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        const adminUsername = sessionStorage.getItem("loggedInAdmin");
-        const adminData = sessionStorage.getItem('adminData');
+        const adminUsername = localStorage.getItem("loggedInAdmin");
+        const adminData = localStorage.getItem('adminData');
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
                 setAdmin(parsedAdminData);
                 setLoggedInAdmin(adminUsername);
+                setLocalAdmin(adminUsername);
                 setIsSessionValid(true);
                 fetchAllTickets();
             } catch (e) {
@@ -55,13 +57,13 @@ export default function MyTicketsPage() {
         } else {
             router.replace('/login');
         }
-    }, [setAdmin, router, fetchAllTickets]);
+    }, [setAdmin, router, fetchAllTickets, setLoggedInAdmin]);
 
     useEffect(() => {
-        if (isSessionValid === true && loggedInAdmin && Array.isArray(allTickets)) {
+        if (isSessionValid === true && localAdmin && Array.isArray(allTickets)) {
             const filtered = allTickets.filter((t) => {
                 // 1. Must belong to the logged-in admin
-                const matchesAdmin = t.admin === loggedInAdmin;
+                const matchesAdmin = t.admin === localAdmin;
                 
                 // 2. Must not be deleted
                 const isNotDeleted = !t.deletedSTAMP || t.deletedSTAMP.trim() === "";
@@ -100,11 +102,11 @@ export default function MyTicketsPage() {
             });
             setFilteredTickets(filtered);
         }
-    }, [allTickets, loggedInAdmin, isSessionValid, activeTab, searchTerm]);
+    }, [allTickets, localAdmin, isSessionValid, activeTab, searchTerm]);
 
     const handleLogout = () => {
-        sessionStorage.removeItem("loggedInAdmin");
-        sessionStorage.removeItem("adminData");
+        localStorage.removeItem("loggedInAdmin");
+        localStorage.removeItem("adminData");
         setAdmin(null);
         setUsers([]);
         setTickets([]);

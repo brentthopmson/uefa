@@ -78,22 +78,26 @@ export default function TicketDetailsAccountPage() {
     const [isTransferModalOpen, setIsTransferModalOpen] = useState(false);
 
     useEffect(() => {
-        const adminUsername = sessionStorage.getItem("loggedInAdmin");
-        const adminData = sessionStorage.getItem("adminData");
+        const adminUsername = localStorage.getItem("loggedInAdmin");
+        const adminData = localStorage.getItem("adminData");
+    
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
                 setAdmin(parsedAdminData);
+                setLoggedInAdmin(adminUsername);
                 setIsSessionValid(true);
-                if (allTickets.length === 0) fetchAllTickets();
+                if (allTickets.length === 0) {
+                    fetchAllTickets();
+                }
             } catch (e) {
                 console.error("Error parsing admin data", e);
-                router.replace("/login");
+                router.replace('/login');
             }
         } else {
-            router.replace("/login");
+            router.replace('/login');
         }
-    }, [setAdmin, router, allTickets.length, fetchAllTickets]);
+    }, [setAdmin, router, fetchAllTickets, setLoggedInAdmin, allTickets.length]);
 
     useEffect(() => {
         if (isSessionValid && allTickets.length > 0) {
@@ -103,11 +107,12 @@ export default function TicketDetailsAccountPage() {
     }, [allTickets, ticketId, isSessionValid]);
 
     const handleLogout = () => {
-        sessionStorage.removeItem("loggedInAdmin");
-        sessionStorage.removeItem("adminData");
+        localStorage.removeItem("loggedInAdmin");
+        localStorage.removeItem("adminData");
         setAdmin(null);
+        setUsers([]);
         setTickets([]);
-        router.push("/login");
+        router.push('/login');
     };
 
 
@@ -139,10 +144,10 @@ export default function TicketDetailsAccountPage() {
                             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
                         </button>
                     ) : (
-                        <button onClick={() => router.push("/secure/myaccount/tickets")} 
+                        <Link href="/secure/myaccount/tickets" 
                             className="w-8 h-8 flex items-center justify-center rounded-full text-white/80 hover:bg-white/10 transition-all">
                             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
-                        </button>
+                        </Link>
                     )}
 
                     {/* Center: Ticket label + dot indicators */}

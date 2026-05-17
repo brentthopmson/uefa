@@ -40,7 +40,7 @@ export default function PersonalDetailsPage() {
     });
 
     useEffect(() => {
-        const adminData = sessionStorage.getItem('adminData');
+        const adminData = localStorage.getItem('adminData');
         if (adminData) {
             try {
                 const parsed = JSON.parse(adminData);
@@ -106,7 +106,7 @@ export default function PersonalDetailsPage() {
                     adminSettings: finalAdminSettings
                 };
                 setAdmin(updatedAdmin);
-                sessionStorage.setItem("adminData", JSON.stringify(updatedAdmin));
+                localStorage.setItem("adminData", JSON.stringify(updatedAdmin));
                 setFormData(prev => ({ ...prev, adminSettings: finalAdminSettings }));
                 setMessage({ type: 'success', text: 'Personal details updated successfully!' });
                 setTimeout(() => setMessage(null), 3000);
@@ -123,8 +123,8 @@ export default function PersonalDetailsPage() {
     };
 
     const handleLogout = () => {
-        sessionStorage.removeItem("loggedInAdmin");
-        sessionStorage.removeItem("adminData");
+        localStorage.removeItem("loggedInAdmin");
+        localStorage.removeItem("adminData");
         setAdmin(null);
         router.push('/login');
     };

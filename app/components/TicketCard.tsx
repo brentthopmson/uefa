@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTicketAlt, faChevronRight, faMapMarkerAlt, faCalendarAlt, faLock, faImage } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { Ticket } from '../types';
 import { useState } from 'react';
 
@@ -15,9 +16,9 @@ export default function TicketCard({ ticket }: TicketCardProps) {
     const [imgError, setImgError] = useState(false);
 
     return (
-        <div
-            onClick={() => router.push(`/secure/myaccount/tickets/${ticket.ticketId || ticket.sn}`)}
-            className="bg-white rounded-[20px] shadow-sm border border-gray-100 overflow-hidden cursor-pointer hover:shadow-md transition-shadow active:scale-[0.99]"
+        <Link
+            href={`/secure/myaccount/tickets/${ticket.ticketId || ticket.sn}`}
+            className="block bg-white rounded-[20px] shadow-sm border border-gray-100 overflow-hidden cursor-pointer hover:shadow-md transition-shadow active:scale-[0.99]"
         >
             {/* Cover Image */}
             {ticket.coverImage && !imgError ? (
@@ -64,6 +65,6 @@ export default function TicketCard({ ticket }: TicketCardProps) {
                     View Ticket <FontAwesomeIcon icon={faChevronRight} className="ml-2 text-xs" />
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

@@ -30,10 +30,11 @@ export default function TransfersPage() {
         fetchAllUsers,
         setAdmin,
         setUsers,
-        setTickets
+        setTickets,
+        setLoggedInAdmin
     } = useUser();
 
-    const [loggedInAdmin, setLoggedInAdmin] = useState<string | null>(null);
+    const [localAdmin, setLocalAdmin] = useState<string | null>(null);
     const [filteredTransfers, setFilteredTransfers] = useState<User[]>([]);
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -41,8 +42,8 @@ export default function TransfersPage() {
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleLogout = () => {
-        sessionStorage.removeItem("loggedInAdmin");
-        sessionStorage.removeItem("adminData");
+        localStorage.removeItem("loggedInAdmin");
+        localStorage.removeItem("adminData");
         setAdmin(null);
         setUsers([]);
         setTickets([]);
@@ -60,13 +61,14 @@ export default function TransfersPage() {
     ];
 
     useEffect(() => {
-        const adminUsername = sessionStorage.getItem("loggedInAdmin");
-        const adminData = sessionStorage.getItem('adminData');
+        const adminUsername = localStorage.getItem("loggedInAdmin");
+        const adminData = localStorage.getItem('adminData');
         if (adminUsername && adminData) {
             try {
                 const parsedAdminData = JSON.parse(adminData);
                 setAdmin(parsedAdminData);
                 setLoggedInAdmin(adminUsername);
+                setLocalAdmin(adminUsername);
                 setIsSessionValid(true);
                 fetchAllUsers();
             } catch (e) {
@@ -76,13 +78,13 @@ export default function TransfersPage() {
         } else {
             router.replace('/login');
         }
-    }, [setAdmin, router, fetchAllUsers]);
+    }, [setAdmin, router, fetchAllUsers, setLoggedInAdmin]);
 
     useEffect(() => {
-        if (isSessionValid === true && loggedInAdmin && Array.isArray(users)) {
+        if (isSessionValid === true && localAdmin && Array.isArray(users)) {
             // Filter: only this admin's transfers with 'uefa' platform
             let transfers = users.filter(u =>
-                u.admin === loggedInAdmin &&
+                u.admin === localAdmin &&
                 u.userPlatform?.toLowerCase() === 'uefa'
             );
 
@@ -109,7 +111,7 @@ export default function TransfersPage() {
 
             setFilteredTransfers(transfers);
         }
-    }, [users, loggedInAdmin, isSessionValid, activeTab, searchTerm]);
+    }, [users, localAdmin, isSessionValid, activeTab, searchTerm]);
 
     const getStatusColor = (status: string) => {
         switch (status) {

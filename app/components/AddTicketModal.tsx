@@ -66,7 +66,7 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
     setError(null);
     
     try {
-      const admin = sessionStorage.getItem("loggedInAdmin");
+      const admin = localStorage.getItem("loggedInAdmin");
       if (!admin) {
         throw new Error("Admin session expired. Please log in again.");
       }
