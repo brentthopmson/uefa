@@ -117,32 +117,11 @@ export default function RootLayoutWrapper({
                 )}
 
                 <div className="relative flex items-center space-x-4">
-                  <form onSubmit={handleSearchSubmit} className="relative hidden xl:block">
-                    <input
-                      type="text"
-                      placeholder="Search UEFA..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="bg-white/10 border-none py-1.5 pl-8 pr-4 rounded-full text-[13px] text-white placeholder-white/50 focus:ring-1 focus:ring-[#00AEEF] transition-all outline-none w-[200px]"
-                    />
-                    <FontAwesomeIcon icon={faSearch} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/50 text-xs" />
-                  </form>
-                  <button className="text-white hover:text-[#00AEEF] p-2 rounded-full transition-colors relative">
-                    <FontAwesomeIcon icon={faBell} className="text-xl" />
-                    <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full border-2 border-[#001C4B]"></span>
-                  </button>
                 </div>
               </div>
 
               {/* Mobile Actions */}
               <div className="flex lg:hidden items-center space-x-4">
-                <button className="text-white p-2 hover:bg-white/10 rounded-full transition-colors">
-                  <FontAwesomeIcon icon={faSearch} className="text-xl" />
-                </button>
-                <button className="text-white p-2 hover:bg-white/10 rounded-full transition-colors relative">
-                  <FontAwesomeIcon icon={faBell} className="text-xl" />
-                  <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-[#001C4B]"></span>
-                </button>
                 <button
                   onClick={() => admin ? router.push('/secure/myaccount/tickets') : router.push('/login')}
                   className="text-white p-2 hover:bg-white/10 rounded-full transition-colors"
