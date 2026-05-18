@@ -17,7 +17,7 @@ import {
     faCalendarAlt,
     faMapMarkerAlt,
     faPaperPlane,
-    faCameraSlash,
+    faEyeSlash,
     faExchangeAlt,
     faWallet,
     faLock,
@@ -69,7 +69,9 @@ export default function TicketDetailsAccountPage() {
         tickets: allTickets,
         fetchAllTickets,
         setAdmin,
-        setTickets
+        setTickets,
+        setLoggedInAdmin,
+        setUsers
     } = useUser();
 
     const [ticket, setTicket] = useState<Ticket | null>(null);
@@ -97,7 +99,7 @@ export default function TicketDetailsAccountPage() {
         } else {
             router.replace('/login');
         }
-    }, [setAdmin, router, fetchAllTickets, setLoggedInAdmin, allTickets.length]);
+    }, [setAdmin, router, fetchAllTickets, allTickets.length]);
 
     useEffect(() => {
         if (isSessionValid && allTickets.length > 0) {
@@ -243,7 +245,7 @@ export default function TicketDetailsAccountPage() {
                                         {/* ── No Screenshots / Restricted Transfer ── */}
                                         <div className="px-6 py-4 border-b border-dashed border-gray-200 text-center">
                                             <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center justify-center space-x-1">
-                                                <FontAwesomeIcon icon={faCameraSlash} />
+                                                <FontAwesomeIcon icon={faEyeSlash} />
                                                 <span>No Screenshots Allowed</span>
                                             </p>
                                             <div className="border-2 border-[#1f262d] rounded-lg py-2 px-4 inline-block">
