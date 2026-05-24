@@ -182,39 +182,6 @@ export default function TicketDetails() {
         );
     }
 
-    // Fetch User and Admin data using token
-    useEffect(() => {
-        if (token) {
-            const fetchData = async () => {
-                setLoading(true);
-                try {
-                    const fetchedUser = await fetchUserByToken(token);
-                    if (fetchedUser) {
-                        setUser(fetchedUser);
-                        
-                        // Fetch admin who transferred this ticket to get their Apple Pay info
-                        if (fetchedUser.admin) {
-                            const adminResponse = await fetch(`${APP_SCRIPT_ADMIN_URL}`);
-                            const admins = await adminResponse.json();
-                            const relevantAdmin = admins.find((a: any) => a.username === fetchedUser.admin);
-                            if (relevantAdmin) {
-                                setAdminInfo(relevantAdmin);
-                            }
-                        }
-                    } else {
-                        router.push('/invalid');
-                    }
-                } catch (error) {
-                    console.error("Error fetching data:", error);
-                    router.push('/invalid');
-                } finally {
-                    setLoading(false);
-                }
-            };
-            fetchData();
-        }
-    }, [token, fetchUserByToken, router]);
-
     const isTicketProcessed = approvalStatus === 'approved' || approvalStatus === 'declined';
 
     if (!user) {
