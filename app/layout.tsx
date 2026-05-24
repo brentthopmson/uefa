@@ -5,6 +5,7 @@ import RootLayoutWrapper from './RootLayout';
 import { Inter } from 'next/font/google';
 
 import { UserProvider } from './UserContext';
+import ManifestLoader from './ManifestLoader';
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ['latin'] });
@@ -48,7 +49,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="UEFA Tickets" />
-        <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://ws.vggcdn.net/" />
         <link rel="dns-prefetch" href="https://ws.vggcdn.net/" />
         <link rel="preconnect" href="https://img.vggcdn.net/" />
@@ -64,6 +64,7 @@ export default function RootLayout({
             {children}
           </RootLayoutWrapper>
         </UserProvider>
+        <ManifestLoader />
       </body>
     </html>
   );
