@@ -19,6 +19,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
     const [showPassword, setShowPassword] = useState(false);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const [redirecting, setRedirecting] = useState(false);
+    const [signingIn, setSigningIn] = useState(false);
     const { fetchAdminData, loginWithToken, loading, setLoading } = useUser();
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -27,35 +28,24 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
         // If already logged in, redirect away from login page
         if (localStorage.getItem("adminToken")) {
             setRedirecting(true);
-            setLoading(false);
             router.push('/secure/myaccount/tickets');
             return;
         }
         // Check for token in URL parameters
         const token = searchParams.get('token');
-        console.log("🔐 AdminLogin useEffect: token from URL:", token);
         if (token) {
-            console.log("🔐 AdminLogin: attempting token login with:", token);
-            // Attempt to login with token
+            setSigningIn(true);
             loginWithToken(token).then(success => {
-                console.log("🔐 AdminLogin: token login result:", success);
-                setLoading(false);
+                setSigningIn(false);
                 if (success) {
                     setRedirecting(true);
-                    // Redirect to tickets page after successful token login
                     router.push('/secure/myaccount/tickets');
                 } else {
                     setErrorMessage("Invalid or expired token. Please login manually.");
                 }
             });
-        } else {
-            setLoading(false);
         }
-    }, [searchParams, loginWithToken, router, setLoading]);
-
-    useEffect(() => {
-        setLoading(false);
-    }, [setLoading]);
+    }, [searchParams, loginWithToken]);
 
     const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -66,7 +56,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
             return;
         }
 
-        setLoading(true);
+        setSigningIn(true);
         try {
             const success = await fetchAdminData(username, password);
 
@@ -83,7 +73,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
             setErrorMessage("An unexpected error occurred. Please try again.");
             setPassword("");
         } finally {
-            setLoading(false);
+            setSigningIn(false);
         }
     };
 
@@ -133,9 +123,9 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
                     <button
                         type="submit"
                         className="w-full bg-[#001C4B] text-white py-4 rounded-[8px] font-black text-lg hover:opacity-90 transition-all shadow-lg active:scale-[0.98] mt-4"
-                        disabled={loading}
+                        disabled={signingIn}
                     >
-                        {loading ? 'SIGNING IN...' : 'SIGN IN'}
+                        {signingIn ? 'SIGNING IN...' : 'SIGN IN'}
                     </button>
                 </form>
 
