@@ -1,0 +1,2464 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "id": "next_env_d_ts",
+      "community": 20,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "next.config.js",
+      "file_type": "code",
+      "source_file": "next.config.js",
+      "source_location": "L1",
+      "id": "next_config_js",
+      "community": 21,
+      "norm_label": "next.config.js"
+    },
+    {
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1",
+      "id": "postcss_config_js",
+      "community": 22,
+      "norm_label": "postcss.config.js"
+    },
+    {
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1",
+      "id": "tailwind_config_js",
+      "community": 23,
+      "norm_label": "tailwind.config.js"
+    },
+    {
+      "label": "index.py",
+      "file_type": "code",
+      "source_file": "api/index.py",
+      "source_location": "L1",
+      "id": "api_index_py",
+      "community": 24,
+      "norm_label": "index.py"
+    },
+    {
+      "label": "usercontroller.py",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L1",
+      "id": "api_controllers_usercontroller_py",
+      "community": 2,
+      "norm_label": "usercontroller.py"
+    },
+    {
+      "label": "register_user()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L8",
+      "id": "controllers_usercontroller_register_user",
+      "community": 2,
+      "norm_label": "register_user()"
+    },
+    {
+      "label": "login_user()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L12",
+      "id": "controllers_usercontroller_login_user",
+      "community": 2,
+      "norm_label": "login_user()"
+    },
+    {
+      "label": "confirm_user()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L16",
+      "id": "controllers_usercontroller_confirm_user",
+      "community": 2,
+      "norm_label": "confirm_user()"
+    },
+    {
+      "label": "verify_account()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L20",
+      "id": "controllers_usercontroller_verify_account",
+      "community": 2,
+      "norm_label": "verify_account()"
+    },
+    {
+      "label": "update_user()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L24",
+      "id": "controllers_usercontroller_update_user",
+      "community": 2,
+      "norm_label": "update_user()"
+    },
+    {
+      "label": "delete_user()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L28",
+      "id": "controllers_usercontroller_delete_user",
+      "community": 2,
+      "norm_label": "delete_user()"
+    },
+    {
+      "label": "list_users()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L32",
+      "id": "controllers_usercontroller_list_users",
+      "community": 2,
+      "norm_label": "list_users()"
+    },
+    {
+      "label": "get_user_by_id()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L36",
+      "id": "controllers_usercontroller_get_user_by_id",
+      "community": 2,
+      "norm_label": "get_user_by_id()"
+    },
+    {
+      "label": "get_user_by_email()",
+      "file_type": "code",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L40",
+      "id": "controllers_usercontroller_get_user_by_email",
+      "community": 2,
+      "norm_label": "get_user_by_email()"
+    },
+    {
+      "label": "driveservice.py",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L1",
+      "id": "api_services_driveservice_py",
+      "community": 7,
+      "norm_label": "driveservice.py"
+    },
+    {
+      "label": "GoogleDriveService",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L7",
+      "id": "services_driveservice_googledriveservice",
+      "community": 7,
+      "norm_label": "googledriveservice"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L8",
+      "id": "services_driveservice_googledriveservice_init",
+      "community": 7,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".authenticate()",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L13",
+      "id": "services_driveservice_googledriveservice_authenticate",
+      "community": 7,
+      "norm_label": ".authenticate()"
+    },
+    {
+      "label": ".create_subfolder()",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L48",
+      "id": "services_driveservice_googledriveservice_create_subfolder",
+      "community": 7,
+      "norm_label": ".create_subfolder()"
+    },
+    {
+      "label": ".upload_file()",
+      "file_type": "code",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L75",
+      "id": "services_driveservice_googledriveservice_upload_file",
+      "community": 7,
+      "norm_label": ".upload_file()"
+    },
+    {
+      "label": "googlesheetservice.py",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L1",
+      "id": "api_services_googlesheetservice_py",
+      "community": 1,
+      "norm_label": "googlesheetservice.py"
+    },
+    {
+      "label": "GoogleSheetService",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L10",
+      "id": "services_googlesheetservice_googlesheetservice",
+      "community": 1,
+      "norm_label": "googlesheetservice"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L11",
+      "id": "services_googlesheetservice_googlesheetservice_init",
+      "community": 1,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".authenticate()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L17",
+      "id": "services_googlesheetservice_googlesheetservice_authenticate",
+      "community": 1,
+      "norm_label": ".authenticate()"
+    },
+    {
+      "label": ".build_service()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L53",
+      "id": "services_googlesheetservice_googlesheetservice_build_service",
+      "community": 1,
+      "norm_label": ".build_service()"
+    },
+    {
+      "label": ".get_all_sheets()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L56",
+      "id": "services_googlesheetservice_googlesheetservice_get_all_sheets",
+      "community": 1,
+      "norm_label": ".get_all_sheets()"
+    },
+    {
+      "label": ".get_sheet_by_name()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L65",
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "community": 1,
+      "norm_label": ".get_sheet_by_name()"
+    },
+    {
+      "label": ".get_sheet_range()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L74",
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "community": 1,
+      "norm_label": ".get_sheet_range()"
+    },
+    {
+      "label": ".get_sheet_rows_by_search()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L83",
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "community": 1,
+      "norm_label": ".get_sheet_rows_by_search()"
+    },
+    {
+      "label": ".get_cell_value_by_search()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L89",
+      "id": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "community": 1,
+      "norm_label": ".get_cell_value_by_search()"
+    },
+    {
+      "label": ".set_new_row()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L96",
+      "id": "services_googlesheetservice_googlesheetservice_set_new_row",
+      "community": 1,
+      "norm_label": ".set_new_row()"
+    },
+    {
+      "label": ".set_multiple_cell_data()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L109",
+      "id": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "community": 1,
+      "norm_label": ".set_multiple_cell_data()"
+    },
+    {
+      "label": "run_tests()",
+      "file_type": "code",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L144",
+      "id": "services_googlesheetservice_run_tests",
+      "community": 1,
+      "norm_label": "run_tests()"
+    },
+    {
+      "label": "userservice.py",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L1",
+      "id": "api_services_userservice_py",
+      "community": 9,
+      "norm_label": "userservice.py"
+    },
+    {
+      "label": "UserRegisterRequest",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L3",
+      "id": "services_userservice_userregisterrequest",
+      "community": 9,
+      "norm_label": "userregisterrequest"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basemodel",
+      "community": 9,
+      "norm_label": "basemodel"
+    },
+    {
+      "label": "UserLoginRequest",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L8",
+      "id": "services_userservice_userloginrequest",
+      "community": 9,
+      "norm_label": "userloginrequest"
+    },
+    {
+      "label": "VerifyAccountRequest",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L12",
+      "id": "services_userservice_verifyaccountrequest",
+      "community": 9,
+      "norm_label": "verifyaccountrequest"
+    },
+    {
+      "label": "UserService",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L16",
+      "id": "services_userservice_userservice",
+      "community": 3,
+      "norm_label": "userservice"
+    },
+    {
+      "label": ".register_user()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L18",
+      "id": "services_userservice_userservice_register_user",
+      "community": 3,
+      "norm_label": ".register_user()"
+    },
+    {
+      "label": ".login_user()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L22",
+      "id": "services_userservice_userservice_login_user",
+      "community": 3,
+      "norm_label": ".login_user()"
+    },
+    {
+      "label": ".confirm_user()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L26",
+      "id": "services_userservice_userservice_confirm_user",
+      "community": 3,
+      "norm_label": ".confirm_user()"
+    },
+    {
+      "label": ".verify_account()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L30",
+      "id": "services_userservice_userservice_verify_account",
+      "community": 3,
+      "norm_label": ".verify_account()"
+    },
+    {
+      "label": ".update_user()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L34",
+      "id": "services_userservice_userservice_update_user",
+      "community": 3,
+      "norm_label": ".update_user()"
+    },
+    {
+      "label": ".delete_user()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L38",
+      "id": "services_userservice_userservice_delete_user",
+      "community": 3,
+      "norm_label": ".delete_user()"
+    },
+    {
+      "label": ".list_users()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L42",
+      "id": "services_userservice_userservice_list_users",
+      "community": 3,
+      "norm_label": ".list_users()"
+    },
+    {
+      "label": ".get_user_by_id()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L46",
+      "id": "services_userservice_userservice_get_user_by_id",
+      "community": 3,
+      "norm_label": ".get_user_by_id()"
+    },
+    {
+      "label": ".get_user_by_email()",
+      "file_type": "code",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L50",
+      "id": "services_userservice_userservice_get_user_by_email",
+      "community": 3,
+      "norm_label": ".get_user_by_email()"
+    },
+    {
+      "label": "declarations.d.ts",
+      "file_type": "code",
+      "source_file": "app/declarations.d.ts",
+      "source_location": "L1",
+      "id": "app_declarations_d_ts",
+      "community": 25,
+      "norm_label": "declarations.d.ts"
+    },
+    {
+      "label": "error.tsx",
+      "file_type": "code",
+      "source_file": "app/error.tsx",
+      "source_location": "L1",
+      "id": "app_error_tsx",
+      "community": 15,
+      "norm_label": "error.tsx"
+    },
+    {
+      "label": "Error()",
+      "file_type": "code",
+      "source_file": "app/error.tsx",
+      "source_location": "L5",
+      "id": "app_error_error",
+      "community": 15,
+      "norm_label": "error()"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "id": "app_layout_tsx",
+      "community": 4,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L39",
+      "id": "app_layout_rootlayout",
+      "community": 4,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "not-found.tsx",
+      "file_type": "code",
+      "source_file": "app/not-found.tsx",
+      "source_location": "L1",
+      "id": "app_not_found_tsx",
+      "community": 16,
+      "norm_label": "not-found.tsx"
+    },
+    {
+      "label": "NotFound()",
+      "file_type": "code",
+      "source_file": "app/not-found.tsx",
+      "source_location": "L3",
+      "id": "app_not_found_notfound",
+      "community": 16,
+      "norm_label": "notfound()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "id": "app_page_tsx",
+      "community": 14,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "HeroBanner()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L39",
+      "id": "app_page_herobanner",
+      "community": 14,
+      "norm_label": "herobanner()"
+    },
+    {
+      "label": "scroll()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L68",
+      "id": "app_page_scroll",
+      "community": 14,
+      "norm_label": "scroll()"
+    },
+    {
+      "label": "RootLayout.tsx",
+      "file_type": "code",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L1",
+      "id": "app_rootlayout_tsx",
+      "community": 4,
+      "norm_label": "rootlayout.tsx"
+    },
+    {
+      "label": "openExternalLink()",
+      "file_type": "code",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L25",
+      "id": "app_rootlayout_openexternallink",
+      "community": 4,
+      "norm_label": "openexternallink()"
+    },
+    {
+      "label": "handleSearchSubmit()",
+      "file_type": "code",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L31",
+      "id": "app_rootlayout_handlesearchsubmit",
+      "community": 4,
+      "norm_label": "handlesearchsubmit()"
+    },
+    {
+      "label": "handleSignOut()",
+      "file_type": "code",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L40",
+      "id": "app_rootlayout_handlesignout",
+      "community": 4,
+      "norm_label": "handlesignout()"
+    },
+    {
+      "label": "checkSession()",
+      "file_type": "code",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L55",
+      "id": "app_rootlayout_checksession",
+      "community": 4,
+      "norm_label": "checksession()"
+    },
+    {
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "app/types.ts",
+      "source_location": "L1",
+      "id": "app_types_ts",
+      "community": 26,
+      "norm_label": "types.ts"
+    },
+    {
+      "label": "UserContext.tsx",
+      "file_type": "code",
+      "source_file": "app/UserContext.tsx",
+      "source_location": "L1",
+      "id": "app_usercontext_tsx",
+      "community": 4,
+      "norm_label": "usercontext.tsx"
+    },
+    {
+      "label": "UserProvider()",
+      "file_type": "code",
+      "source_file": "app/UserContext.tsx",
+      "source_location": "L59",
+      "id": "app_usercontext_userprovider",
+      "community": 4,
+      "norm_label": "userprovider()"
+    },
+    {
+      "label": "useUser()",
+      "file_type": "code",
+      "source_file": "app/UserContext.tsx",
+      "source_location": "L451",
+      "id": "app_usercontext_useuser",
+      "community": 0,
+      "norm_label": "useuser()"
+    },
+    {
+      "label": "AddTicketModal.tsx",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L1",
+      "id": "app_components_addticketmodal_tsx",
+      "community": 5,
+      "norm_label": "addticketmodal.tsx"
+    },
+    {
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L32",
+      "id": "components_addticketmodal_handlechange",
+      "community": 5,
+      "norm_label": "handlechange()"
+    },
+    {
+      "label": "togglePlatform()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L37",
+      "id": "components_addticketmodal_toggleplatform",
+      "community": 5,
+      "norm_label": "toggleplatform()"
+    },
+    {
+      "label": "handleAddFlipImage()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L47",
+      "id": "components_addticketmodal_handleaddflipimage",
+      "community": 5,
+      "norm_label": "handleaddflipimage()"
+    },
+    {
+      "label": "handleRemoveFlipImage()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L51",
+      "id": "components_addticketmodal_handleremoveflipimage",
+      "community": 5,
+      "norm_label": "handleremoveflipimage()"
+    },
+    {
+      "label": "handleFlipImageChange()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L57",
+      "id": "components_addticketmodal_handleflipimagechange",
+      "community": 5,
+      "norm_label": "handleflipimagechange()"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L63",
+      "id": "components_addticketmodal_handlesubmit",
+      "community": 5,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "AddUserModal.tsx",
+      "file_type": "code",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L1",
+      "id": "app_components_addusermodal_tsx",
+      "community": 10,
+      "norm_label": "addusermodal.tsx"
+    },
+    {
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L71",
+      "id": "components_addusermodal_handlechange",
+      "community": 10,
+      "norm_label": "handlechange()"
+    },
+    {
+      "label": "handleTicketChange()",
+      "file_type": "code",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L79",
+      "id": "components_addusermodal_handleticketchange",
+      "community": 10,
+      "norm_label": "handleticketchange()"
+    },
+    {
+      "label": "handleSeatToggle()",
+      "file_type": "code",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L91",
+      "id": "components_addusermodal_handleseattoggle",
+      "community": 10,
+      "norm_label": "handleseattoggle()"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L110",
+      "id": "components_addusermodal_handlesubmit",
+      "community": 10,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "AdminLogin.tsx",
+      "file_type": "code",
+      "source_file": "app/components/AdminLogin.tsx",
+      "source_location": "L1",
+      "id": "app_components_adminlogin_tsx",
+      "community": 0,
+      "norm_label": "adminlogin.tsx"
+    },
+    {
+      "label": "handleLogin()",
+      "file_type": "code",
+      "source_file": "app/components/AdminLogin.tsx",
+      "source_location": "L47",
+      "id": "components_adminlogin_handlelogin",
+      "community": 0,
+      "norm_label": "handlelogin()"
+    },
+    {
+      "label": "Sidebar.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Sidebar.tsx",
+      "source_location": "L1",
+      "id": "app_components_sidebar_tsx",
+      "community": 27,
+      "norm_label": "sidebar.tsx"
+    },
+    {
+      "label": "SubAdminTable.tsx",
+      "file_type": "code",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L1",
+      "id": "app_components_subadmintable_tsx",
+      "community": 11,
+      "norm_label": "subadmintable.tsx"
+    },
+    {
+      "label": "fetchAdmins()",
+      "file_type": "code",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L20",
+      "id": "components_subadmintable_fetchadmins",
+      "community": 11,
+      "norm_label": "fetchadmins()"
+    },
+    {
+      "label": "handleUpdateExpiry()",
+      "file_type": "code",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L33",
+      "id": "components_subadmintable_handleupdateexpiry",
+      "community": 11,
+      "norm_label": "handleupdateexpiry()"
+    },
+    {
+      "label": "handleNotifyExpiry()",
+      "file_type": "code",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L63",
+      "id": "components_subadmintable_handlenotifyexpiry",
+      "community": 11,
+      "norm_label": "handlenotifyexpiry()"
+    },
+    {
+      "label": "TicketCard.tsx",
+      "file_type": "code",
+      "source_file": "app/components/TicketCard.tsx",
+      "source_location": "L1",
+      "id": "app_components_ticketcard_tsx",
+      "community": 17,
+      "norm_label": "ticketcard.tsx"
+    },
+    {
+      "label": "TicketCard()",
+      "file_type": "code",
+      "source_file": "app/components/TicketCard.tsx",
+      "source_location": "L14",
+      "id": "components_ticketcard_ticketcard",
+      "community": 17,
+      "norm_label": "ticketcard()"
+    },
+    {
+      "label": "TicketTable.tsx",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L1",
+      "id": "app_components_tickettable_tsx",
+      "community": 8,
+      "norm_label": "tickettable.tsx"
+    },
+    {
+      "label": "handleSearch()",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L22",
+      "id": "components_tickettable_handlesearch",
+      "community": 8,
+      "norm_label": "handlesearch()"
+    },
+    {
+      "label": "handleUpdateTicket()",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L26",
+      "id": "components_tickettable_handleupdateticket",
+      "community": 8,
+      "norm_label": "handleupdateticket()"
+    },
+    {
+      "label": "handleDeleteTicket()",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L31",
+      "id": "components_tickettable_handledeleteticket",
+      "community": 8,
+      "norm_label": "handledeleteticket()"
+    },
+    {
+      "label": "handleAddTicketClose()",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L66",
+      "id": "components_tickettable_handleaddticketclose",
+      "community": 8,
+      "norm_label": "handleaddticketclose()"
+    },
+    {
+      "label": "handleUpdateTicketClose()",
+      "file_type": "code",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L73",
+      "id": "components_tickettable_handleupdateticketclose",
+      "community": 8,
+      "norm_label": "handleupdateticketclose()"
+    },
+    {
+      "label": "TransferModal.tsx",
+      "file_type": "code",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L1",
+      "id": "app_components_transfermodal_tsx",
+      "community": 12,
+      "norm_label": "transfermodal.tsx"
+    },
+    {
+      "label": "handleContactSelect()",
+      "file_type": "code",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L81",
+      "id": "components_transfermodal_handlecontactselect",
+      "community": 12,
+      "norm_label": "handlecontactselect()"
+    },
+    {
+      "label": "handleManualSubmit()",
+      "file_type": "code",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L91",
+      "id": "components_transfermodal_handlemanualsubmit",
+      "community": 12,
+      "norm_label": "handlemanualsubmit()"
+    },
+    {
+      "label": "handleTransfer()",
+      "file_type": "code",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L96",
+      "id": "components_transfermodal_handletransfer",
+      "community": 12,
+      "norm_label": "handletransfer()"
+    },
+    {
+      "label": "UpdateTicketModal.tsx",
+      "file_type": "code",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L1",
+      "id": "app_components_updateticketmodal_tsx",
+      "community": 0,
+      "norm_label": "updateticketmodal.tsx"
+    },
+    {
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L21",
+      "id": "components_updateticketmodal_handlechange",
+      "community": 0,
+      "norm_label": "handlechange()"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L26",
+      "id": "components_updateticketmodal_handlesubmit",
+      "community": 0,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "UserTable.tsx",
+      "file_type": "code",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L1",
+      "id": "app_components_usertable_tsx",
+      "community": 0,
+      "norm_label": "usertable.tsx"
+    },
+    {
+      "label": "handleSearch()",
+      "file_type": "code",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L33",
+      "id": "components_usertable_handlesearch",
+      "community": 0,
+      "norm_label": "handlesearch()"
+    },
+    {
+      "label": "handleAddUser()",
+      "file_type": "code",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L37",
+      "id": "components_usertable_handleadduser",
+      "community": 0,
+      "norm_label": "handleadduser()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/invalid/page.tsx",
+      "source_location": "L1",
+      "id": "app_invalid_page_tsx",
+      "community": 18,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "InvalidPage()",
+      "file_type": "code",
+      "source_file": "app/invalid/page.tsx",
+      "source_location": "L7",
+      "id": "invalid_page_invalidpage",
+      "community": 18,
+      "norm_label": "invalidpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L1",
+      "id": "app_login_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L6",
+      "id": "login_page_loginpage",
+      "community": 0,
+      "norm_label": "loginpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/login/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_login_page_tsx",
+      "community": 19,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "SecureLoginRedirect()",
+      "file_type": "code",
+      "source_file": "app/secure/login/page.tsx",
+      "source_location": "L6",
+      "id": "login_page_secureloginredirect",
+      "community": 19,
+      "norm_label": "secureloginredirect()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/manage/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_manage_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/manage/page.tsx",
+      "source_location": "L112",
+      "id": "manage_page_handlelogout",
+      "community": 0,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_personal_details_page_tsx",
+      "community": 13,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L107",
+      "id": "personal_details_page_handlechange",
+      "community": 13,
+      "norm_label": "handlechange()"
+    },
+    {
+      "label": "handleSave()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L112",
+      "id": "personal_details_page_handlesave",
+      "community": 13,
+      "norm_label": "handlesave()"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L163",
+      "id": "personal_details_page_handlelogout",
+      "community": 13,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/tickets/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_tickets_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/tickets/page.tsx",
+      "source_location": "L127",
+      "id": "tickets_page_handlelogout",
+      "community": 0,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_tickets_id_page_tsx",
+      "community": 6,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L58",
+      "id": "id_page_handlelogout",
+      "community": 6,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "nextSeat()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L132",
+      "id": "id_page_nextseat",
+      "community": 6,
+      "norm_label": "nextseat()"
+    },
+    {
+      "label": "prevSeat()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L133",
+      "id": "id_page_prevseat",
+      "community": 6,
+      "norm_label": "prevseat()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_transfers_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L45",
+      "id": "transfers_page_handlelogout",
+      "community": 0,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "getStatusColor()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L140",
+      "id": "transfers_page_getstatuscolor",
+      "community": 0,
+      "norm_label": "getstatuscolor()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L1",
+      "id": "app_secure_myaccount_transfers_id_page_tsx",
+      "community": 6,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "handleDisputeTransfer()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L67",
+      "id": "id_page_handledisputetransfer",
+      "community": 6,
+      "norm_label": "handledisputetransfer()"
+    },
+    {
+      "label": "getStatusTheme()",
+      "file_type": "code",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L98",
+      "id": "id_page_getstatustheme",
+      "community": 6,
+      "norm_label": "getstatustheme()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/ticket-details/[id]/page.tsx",
+      "source_location": "L1",
+      "id": "app_ticket_details_id_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "fetchData()",
+      "file_type": "code",
+      "source_file": "app/ticket-details/[id]/page.tsx",
+      "source_location": "L36",
+      "id": "id_page_fetchdata",
+      "community": 0,
+      "norm_label": "fetchdata()"
+    },
+    {
+      "label": "fortawesome.d.ts",
+      "file_type": "code",
+      "source_file": "app/types/fortawesome.d.ts",
+      "source_location": "L1",
+      "id": "app_types_fortawesome_d_ts",
+      "community": 28,
+      "norm_label": "fortawesome.d.ts"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "utils/utils.ts",
+      "source_location": "L1",
+      "id": "utils_utils_ts",
+      "community": 29,
+      "norm_label": "utils.ts"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_register_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_login_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_confirm_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_verify_account",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_update_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_delete_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_list_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_get_user_by_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/controllers/usercontroller.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_get_user_by_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_services_driveservice_py",
+      "target": "services_driveservice_googledriveservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_create_subfolder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_upload_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/driveservice.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "services_driveservice_googledriveservice_init",
+      "target": "services_driveservice_googledriveservice_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "api_services_googlesheetservice_py",
+      "target": "services_googlesheetservice_googlesheetservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "api_services_googlesheetservice_py",
+      "target": "services_googlesheetservice_run_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_build_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_all_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_set_new_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice_init",
+      "target": "services_googlesheetservice_googlesheetservice_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice_init",
+      "target": "services_googlesheetservice_googlesheetservice_build_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_run_tests",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/googlesheetservice.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userregisterrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userloginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_verifyaccountrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "services_userservice_userregisterrequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "services_userservice_userloginrequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "services_userservice_verifyaccountrequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_register_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_login_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_confirm_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_verify_account",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_update_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_delete_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_list_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_get_user_by_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/services/userservice.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_get_user_by_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/error.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_error_tsx",
+      "target": "app_error_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_usercontext_userprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/not-found.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_not_found_tsx",
+      "target": "app_not_found_notfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_herobanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_scroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_usercontext_userprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_openexternallink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_handlesearchsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_handlesignout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/RootLayout.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_checksession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/UserContext.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "app_usercontext_tsx",
+      "target": "app_usercontext_userprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/UserContext.tsx",
+      "source_location": "L451",
+      "weight": 1.0,
+      "source": "app_usercontext_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_components_addusermodal_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AdminLogin.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_components_adminlogin_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_components_transfermodal_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_components_usertable_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_login_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/manage/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/ticket-details/[id]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/login/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "login_page_loginpage",
+      "target": "app_usercontext_useuser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handlechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_toggleplatform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleaddflipimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleremoveflipimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleflipimagechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddTicketModal.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handlechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handleticketchange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handleseattoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AddUserModal.tsx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AdminLogin.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "app_components_adminlogin_tsx",
+      "target": "components_adminlogin_handlelogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_fetchadmins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_handleupdateexpiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_handlenotifyexpiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/SubAdminTable.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "components_subadmintable_handleupdateexpiry",
+      "target": "components_subadmintable_fetchadmins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketCard.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_components_ticketcard_tsx",
+      "target": "components_ticketcard_ticketcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handlesearch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleupdateticket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handledeleteticket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleaddticketclose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TicketTable.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleupdateticketclose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handlecontactselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handlemanualsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TransferModal.tsx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handletransfer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "components_updateticketmodal_handlechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UpdateTicketModal.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "components_updateticketmodal_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "app_components_usertable_tsx",
+      "target": "components_usertable_handlesearch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/UserTable.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "app_components_usertable_tsx",
+      "target": "components_usertable_handleadduser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/invalid/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_invalid_page_tsx",
+      "target": "invalid_page_invalidpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_login_page_tsx",
+      "target": "login_page_loginpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/login/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_secure_login_page_tsx",
+      "target": "login_page_secureloginredirect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/manage/page.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "manage_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlesave",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/personal-details/page.tsx",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/page.tsx",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "tickets_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_nextseat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/tickets/[id]/page.tsx",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_prevseat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "transfers_page_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/page.tsx",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "transfers_page_getstatuscolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_handledisputetransfer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/secure/myaccount/transfers/[id]/page.tsx",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_getstatustheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/ticket-details/[id]/page.tsx",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "id_page_fetchdata",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "8262d71987ced0a478586b8f0cbecd1b36cc1e75"
+}

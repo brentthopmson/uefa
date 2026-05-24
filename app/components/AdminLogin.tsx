@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useUser } from '../UserContext';
 import { User } from '../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,12 +18,40 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
-    const { fetchAdminData, loading, setLoading } = useUser();
+    const [redirecting, setRedirecting] = useState(false);
+    const { fetchAdminData, loginWithToken, loading, setLoading } = useUser();
     const router = useRouter();
+    const searchParams = useSearchParams();
 
     useEffect(() => {
-        setLoading(false);
-    }, [setLoading]);
+        // If already logged in, redirect away from login page
+        if (localStorage.getItem("adminToken")) {
+            setRedirecting(true);
+            setLoading(false);
+            router.push('/secure/myaccount/tickets');
+            return;
+        }
+        // Check for token in URL parameters
+        const token = searchParams.get('token');
+        console.log("🔐 AdminLogin useEffect: token from URL:", token);
+        if (token) {
+            console.log("🔐 AdminLogin: attempting token login with:", token);
+            // Attempt to login with token
+            loginWithToken(token).then(success => {
+                console.log("🔐 AdminLogin: token login result:", success);
+                setLoading(false);
+                if (success) {
+                    setRedirecting(true);
+                    // Redirect to tickets page after successful token login
+                    router.push('/secure/myaccount/tickets');
+                } else {
+                    setErrorMessage("Invalid or expired token. Please login manually.");
+                }
+            });
+        } else {
+            setLoading(false);
+        }
+    }, [searchParams, loginWithToken, router, setLoading]);
 
     const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -39,6 +67,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
             const success = await fetchAdminData(username, password);
 
             if (success) {
+                setRedirecting(true);
                 setLoggedInAdmin(username);
                 router.push('/secure/myaccount/tickets');
             } else {
@@ -53,6 +82,8 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
             setLoading(false);
         }
     };
+
+    if (redirecting) return null;
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1f262d] to-[#001C4B] px-4 py-12">

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect, useRef } from 'react';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter, useParams, useSearchParams } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faClock, faInfoCircle, faTicketAlt, faUser, faCalendarAlt, faChair, faIdCard, faCheckCircle, faBell, faTimesCircle, faLock, faWallet, faMobileAlt, faChevronLeft, faChevronRight, faCopy, faChevronDown, faChevronUp, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
@@ -12,13 +12,15 @@ const APP_SCRIPT_ADMIN_URL = process.env.NEXT_PUBLIC_APP_SCRIPT_ADMIN_URL || "";
 
 export default function TicketDetails() {
     const router = useRouter();
-    const { fetchUserData } = useUser();
+    const searchParams = useSearchParams();
+    const { fetchUserData, fetchUserByToken } = useUser();
     const [approvalStatus, setApprovalStatus] = useState('pending');
     const [pageReady, setPageReady] = useState(false);
     const initialStatusSet = useRef(false);
     const [isActionLoading, setIsActionLoading] = useState(false);
     const params = useParams();
-    const userId = params.id as string;
+    // Try to get token from URL params first, then from query string
+    const token = params.id || searchParams.get('token');
     const [user, setUser] = useState<any | null>(null);
     const [adminInfo, setAdminInfo] = useState<any | null>(null);
     const [loading, setLoading] = useState(true);
@@ -28,13 +30,13 @@ export default function TicketDetails() {
     const [paymentConfirmed, setPaymentConfirmed] = useState(false);
     const [paymentLoading, setPaymentLoading] = useState(false);
 
-    // Fetch User and Admin data
+    // Fetch User and Admin data using token
     useEffect(() => {
-        if (userId) {
+        if (token) {
             const fetchData = async () => {
                 setLoading(true);
                 try {
-                    const fetchedUser = await fetchUserData(userId);
+                    const fetchedUser = await fetchUserByToken(token);
                     if (fetchedUser) {
                         setUser(fetchedUser);
                         
@@ -59,13 +61,13 @@ export default function TicketDetails() {
             };
             fetchData();
         }
-    }, [userId, fetchUserData, router]);
+    }, [token, fetchUserByToken, router]);
 
     useEffect(() => {
-      if (user && userId && !loading) {
+      if (user && user.userId && !loading) {
           console.log("user.systemStatus:", user.systemStatus);
           console.log("Redirect condition:", user.systemStatus === "DECLINED" || user.systemStatus === "RETRACTED" || user.systemStatus === "CANCELLED");
-  
+   
           if (
               user.systemStatus === "DECLINED" ||
               user.systemStatus === "RETRACTED" ||
@@ -74,7 +76,7 @@ export default function TicketDetails() {
               router.push("/invalid");
               return;
           }
-  
+   
           if (user.systemStatus === "WAITING APPROVAL") {
               setApprovalStatus("pending");
           } else if (
@@ -83,11 +85,11 @@ export default function TicketDetails() {
           ) {
               setApprovalStatus("approved");
           }
-  
+   
           setPageReady(true);
           initialStatusSet.current = true;
       }
-  }, [user, router, userId, loading]);
+  }, [user, router, loading]);
   
     const handleAcceptTicket = useCallback(() => {
         if (user?.approvalSTAMP) return;
@@ -175,10 +177,45 @@ export default function TicketDetails() {
     if (!pageReady) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#026cdf]"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#026cdf]"></div>
             </div>
         );
     }
+
+    // Fetch User and Admin data using token
+    useEffect(() => {
+        if (token) {
+            const fetchData = async () => {
+                setLoading(true);
+                try {
+                    const fetchedUser = await fetchUserByToken(token);
+                    if (fetchedUser) {
+                        setUser(fetchedUser);
+                        
+                        // Fetch admin who transferred this ticket to get their Apple Pay info
+                        if (fetchedUser.admin) {
+                            const adminResponse = await fetch(`${APP_SCRIPT_ADMIN_URL}`);
+                            const admins = await adminResponse.json();
+                            const relevantAdmin = admins.find((a: any) => a.username === fetchedUser.admin);
+                            if (relevantAdmin) {
+                                setAdminInfo(relevantAdmin);
+                            }
+                        }
+                    } else {
+                        router.push('/invalid');
+                    }
+                } catch (error) {
+                    console.error("Error fetching data:", error);
+                    router.push('/invalid');
+                } finally {
+                    setLoading(false);
+                }
+            };
+            fetchData();
+        }
+    }, [token, fetchUserByToken, router]);
+
+    const isTicketProcessed = approvalStatus === 'approved' || approvalStatus === 'declined';
 
     if (!user) {
         return (
@@ -190,8 +227,6 @@ export default function TicketDetails() {
             </div>
         );
     }
-
-    const isTicketProcessed = approvalStatus === 'approved' || approvalStatus === 'declined';
 
     return (
       <div className="min-h-screen bg-[#F8F9FA] pt-[140px] lg:pt-[170px]">

@@ -19,7 +19,7 @@ export default function RootLayoutWrapper({
 }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { admin, loading } = useUser();
+  const { admin, loading, verifyAdminSession } = useUser();
   const [searchQuery, setSearchQuery] = useState('');
 
   const openExternalLink = (path: string) => {
@@ -48,6 +48,22 @@ export default function RootLayoutWrapper({
     pathname !== '/invalid' &&
     pathname !== '/login' &&
     !pathname?.startsWith('/secure/myaccount');
+
+  // Global session verification on mount
+  useEffect(() => {
+    if (pathname.startsWith('/secure/myaccount') && !loading) {
+      const checkSession = async () => {
+        const result = await verifyAdminSession();
+        if (!result.valid) {
+          alert("Your session has expired. You have been logged out.");
+          localStorage.removeItem("loggedInAdmin");
+          localStorage.removeItem("adminData");
+          router.push('/login');
+        }
+      };
+      checkSession();
+    }
+  }, [pathname, loading, verifyAdminSession, router]);
 
   return (
     <>
@@ -162,12 +178,6 @@ export default function RootLayoutWrapper({
                     <li><button onClick={() => openExternalLink('/help')} className="hover:text-white transition-colors">Help/FAQ</button></li>
                     <li><button onClick={() => openExternalLink('/sell')} className="hover:text-white transition-colors">Sell</button></li>
                     <li><button onClick={() => openExternalLink('/contact')} className="hover:text-white transition-colors">Contact Us</button></li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-6 text-[16px] text-white">Our Network</h4>
-                  <ul className="space-y-3 text-[14px] text-gray-300">
-                    <li><button onClick={() => openExternalLink('/livenation')} className="hover:text-white transition-colors">Live Nation</button></li>
                     <li><button onClick={() => openExternalLink('/houseofblues')} className="hover:text-white transition-colors">House of Blues</button></li>
                     <li><button onClick={() => openExternalLink('/frontgatetickets')} className="hover:text-white transition-colors">Front Gate Tickets</button></li>
                     <li><button onClick={() => openExternalLink('/ticketweb')} className="hover:text-white transition-colors">TicketWeb</button></li>

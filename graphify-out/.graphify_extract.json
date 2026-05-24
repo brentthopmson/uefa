@@ -1,0 +1,3767 @@
+{
+  "nodes": [
+    {
+      "id": "next_env_d_ts",
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_js",
+      "label": "next.config.js",
+      "file_type": "code",
+      "source_file": "next.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "postcss_config_js",
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "tailwind_config_js",
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_index_py",
+      "label": "index.py",
+      "file_type": "code",
+      "source_file": "api\\index.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_controllers_usercontroller_py",
+      "label": "usercontroller.py",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "controllers_usercontroller_register_user",
+      "label": "register_user()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "controllers_usercontroller_login_user",
+      "label": "login_user()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L12"
+    },
+    {
+      "id": "controllers_usercontroller_confirm_user",
+      "label": "confirm_user()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "controllers_usercontroller_verify_account",
+      "label": "verify_account()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "controllers_usercontroller_update_user",
+      "label": "update_user()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "controllers_usercontroller_delete_user",
+      "label": "delete_user()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "controllers_usercontroller_list_users",
+      "label": "list_users()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "controllers_usercontroller_get_user_by_id",
+      "label": "get_user_by_id()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L36"
+    },
+    {
+      "id": "controllers_usercontroller_get_user_by_email",
+      "label": "get_user_by_email()",
+      "file_type": "code",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "api_services_driveservice_py",
+      "label": "driveservice.py",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_driveservice_googledriveservice",
+      "label": "GoogleDriveService",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "services_driveservice_googledriveservice_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "services_driveservice_googledriveservice_authenticate",
+      "label": ".authenticate()",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "services_driveservice_googledriveservice_create_subfolder",
+      "label": ".create_subfolder()",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "services_driveservice_googledriveservice_upload_file",
+      "label": ".upload_file()",
+      "file_type": "code",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "api_services_googlesheetservice_py",
+      "label": "googlesheetservice.py",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice",
+      "label": "GoogleSheetService",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_authenticate",
+      "label": ".authenticate()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_build_service",
+      "label": ".build_service()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_get_all_sheets",
+      "label": ".get_all_sheets()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L56"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "label": ".get_sheet_by_name()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "label": ".get_sheet_range()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "label": ".get_sheet_rows_by_search()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "label": ".get_cell_value_by_search()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L89"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_set_new_row",
+      "label": ".set_new_row()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "label": ".set_multiple_cell_data()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L109"
+    },
+    {
+      "id": "services_googlesheetservice_run_tests",
+      "label": "run_tests()",
+      "file_type": "code",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L144"
+    },
+    {
+      "id": "api_services_userservice_py",
+      "label": "userservice.py",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_userservice_userregisterrequest",
+      "label": "UserRegisterRequest",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L3"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "services_userservice_userloginrequest",
+      "label": "UserLoginRequest",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "services_userservice_verifyaccountrequest",
+      "label": "VerifyAccountRequest",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L12"
+    },
+    {
+      "id": "services_userservice_userservice",
+      "label": "UserService",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "services_userservice_userservice_register_user",
+      "label": ".register_user()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "services_userservice_userservice_login_user",
+      "label": ".login_user()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L22"
+    },
+    {
+      "id": "services_userservice_userservice_confirm_user",
+      "label": ".confirm_user()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "services_userservice_userservice_verify_account",
+      "label": ".verify_account()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "services_userservice_userservice_update_user",
+      "label": ".update_user()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "services_userservice_userservice_delete_user",
+      "label": ".delete_user()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "services_userservice_userservice_list_users",
+      "label": ".list_users()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "services_userservice_userservice_get_user_by_id",
+      "label": ".get_user_by_id()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L46"
+    },
+    {
+      "id": "services_userservice_userservice_get_user_by_email",
+      "label": ".get_user_by_email()",
+      "file_type": "code",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "app_declarations_d_ts",
+      "label": "declarations.d.ts",
+      "file_type": "code",
+      "source_file": "app\\declarations.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_error_tsx",
+      "label": "error.tsx",
+      "file_type": "code",
+      "source_file": "app\\error.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_error_error",
+      "label": "Error()",
+      "file_type": "code",
+      "source_file": "app\\error.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "app_layout_tsx",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "app_not_found_tsx",
+      "label": "not-found.tsx",
+      "file_type": "code",
+      "source_file": "app\\not-found.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_not_found_notfound",
+      "label": "NotFound()",
+      "file_type": "code",
+      "source_file": "app\\not-found.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_page_herobanner",
+      "label": "HeroBanner()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "app_page_scroll",
+      "label": "scroll()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L68"
+    },
+    {
+      "id": "app_rootlayout_tsx",
+      "label": "RootLayout.tsx",
+      "file_type": "code",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_rootlayout_openexternallink",
+      "label": "openExternalLink()",
+      "file_type": "code",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L25"
+    },
+    {
+      "id": "app_rootlayout_handlesearchsubmit",
+      "label": "handleSearchSubmit()",
+      "file_type": "code",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "app_rootlayout_handlesignout",
+      "label": "handleSignOut()",
+      "file_type": "code",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L40"
+    },
+    {
+      "id": "app_rootlayout_checksession",
+      "label": "checkSession()",
+      "file_type": "code",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L55"
+    },
+    {
+      "id": "app_types_ts",
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "app\\types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_usercontext_tsx",
+      "label": "UserContext.tsx",
+      "file_type": "code",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_usercontext_userprovider",
+      "label": "UserProvider()",
+      "file_type": "code",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "app_usercontext_useuser",
+      "label": "useUser()",
+      "file_type": "code",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L451"
+    },
+    {
+      "id": "app_components_addticketmodal_tsx",
+      "label": "AddTicketModal.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_addticketmodal_handlechange",
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "components_addticketmodal_toggleplatform",
+      "label": "togglePlatform()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "components_addticketmodal_handleaddflipimage",
+      "label": "handleAddFlipImage()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "components_addticketmodal_handleremoveflipimage",
+      "label": "handleRemoveFlipImage()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "components_addticketmodal_handleflipimagechange",
+      "label": "handleFlipImageChange()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "components_addticketmodal_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "app_components_addusermodal_tsx",
+      "label": "AddUserModal.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_addusermodal_handlechange",
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "components_addusermodal_handleticketchange",
+      "label": "handleTicketChange()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L79"
+    },
+    {
+      "id": "components_addusermodal_handleseattoggle",
+      "label": "handleSeatToggle()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L91"
+    },
+    {
+      "id": "components_addusermodal_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L110"
+    },
+    {
+      "id": "app_components_adminlogin_tsx",
+      "label": "AdminLogin.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_adminlogin_handlelogin",
+      "label": "handleLogin()",
+      "file_type": "code",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "app_components_sidebar_tsx",
+      "label": "Sidebar.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_subadmintable_tsx",
+      "label": "SubAdminTable.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_subadmintable_fetchadmins",
+      "label": "fetchAdmins()",
+      "file_type": "code",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "components_subadmintable_handleupdateexpiry",
+      "label": "handleUpdateExpiry()",
+      "file_type": "code",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L33"
+    },
+    {
+      "id": "components_subadmintable_handlenotifyexpiry",
+      "label": "handleNotifyExpiry()",
+      "file_type": "code",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "app_components_ticketcard_tsx",
+      "label": "TicketCard.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_ticketcard_ticketcard",
+      "label": "TicketCard()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "app_components_tickettable_tsx",
+      "label": "TicketTable.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_tickettable_handlesearch",
+      "label": "handleSearch()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "components_tickettable_handleupdateticket",
+      "label": "handleUpdateTicket()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "components_tickettable_handledeleteticket",
+      "label": "handleDeleteTicket()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "components_tickettable_handleaddticketclose",
+      "label": "handleAddTicketClose()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L66"
+    },
+    {
+      "id": "components_tickettable_handleupdateticketclose",
+      "label": "handleUpdateTicketClose()",
+      "file_type": "code",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L73"
+    },
+    {
+      "id": "app_components_transfermodal_tsx",
+      "label": "TransferModal.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_transfermodal_handlecontactselect",
+      "label": "handleContactSelect()",
+      "file_type": "code",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "components_transfermodal_handlemanualsubmit",
+      "label": "handleManualSubmit()",
+      "file_type": "code",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L91"
+    },
+    {
+      "id": "components_transfermodal_handletransfer",
+      "label": "handleTransfer()",
+      "file_type": "code",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L96"
+    },
+    {
+      "id": "app_components_updateticketmodal_tsx",
+      "label": "UpdateTicketModal.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_updateticketmodal_handlechange",
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "components_updateticketmodal_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "app_components_usertable_tsx",
+      "label": "UserTable.tsx",
+      "file_type": "code",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_usertable_handlesearch",
+      "label": "handleSearch()",
+      "file_type": "code",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L33"
+    },
+    {
+      "id": "components_usertable_handleadduser",
+      "label": "handleAddUser()",
+      "file_type": "code",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "app_invalid_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "invalid_page_invalidpage",
+      "label": "InvalidPage()",
+      "file_type": "code",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_login_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_page_loginpage",
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_secure_login_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\login\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_page_secureloginredirect",
+      "label": "SecureLoginRedirect()",
+      "file_type": "code",
+      "source_file": "app\\secure\\login\\page.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_secure_myaccount_manage_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "manage_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L112"
+    },
+    {
+      "id": "app_secure_myaccount_personal_details_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "personal_details_page_handlechange",
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L107"
+    },
+    {
+      "id": "personal_details_page_handlesave",
+      "label": "handleSave()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L112"
+    },
+    {
+      "id": "personal_details_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L163"
+    },
+    {
+      "id": "app_secure_myaccount_tickets_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "tickets_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L127"
+    },
+    {
+      "id": "app_secure_myaccount_tickets_id_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "id_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L111"
+    },
+    {
+      "id": "id_page_nextseat",
+      "label": "nextSeat()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L132"
+    },
+    {
+      "id": "id_page_prevseat",
+      "label": "prevSeat()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L133"
+    },
+    {
+      "id": "app_secure_myaccount_transfers_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfers_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L45"
+    },
+    {
+      "id": "transfers_page_getstatuscolor",
+      "label": "getStatusColor()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L140"
+    },
+    {
+      "id": "app_secure_myaccount_transfers_id_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "id_page_handlelogout",
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "id_page_handledisputetransfer",
+      "label": "handleDisputeTransfer()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L67"
+    },
+    {
+      "id": "id_page_getstatustheme",
+      "label": "getStatusTheme()",
+      "file_type": "code",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L98"
+    },
+    {
+      "id": "app_ticket_details_id_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "id_page_fetchdata",
+      "label": "fetchData()",
+      "file_type": "code",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L36"
+    },
+    {
+      "id": "app_types_fortawesome_d_ts",
+      "label": "fortawesome.d.ts",
+      "file_type": "code",
+      "source_file": "app\\types\\fortawesome.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_utils_ts",
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "utils\\utils.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "api_index_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\index.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "api_index_py",
+      "target": "api_controllers",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\index.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "api_index_py",
+      "target": "uvicorn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\index.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "api_services_userservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_register_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_login_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_confirm_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_verify_account",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_update_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_delete_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_list_users",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_get_user_by_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "api_controllers_usercontroller_py",
+      "target": "controllers_usercontroller_get_user_by_email",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\controllers\\usercontroller.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "jwt",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_driveservice_py",
+      "target": "services_driveservice_googledriveservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_authenticate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_create_subfolder",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "services_driveservice_googledriveservice",
+      "target": "services_driveservice_googledriveservice_upload_file",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "services_driveservice_googledriveservice_init",
+      "target": "services_driveservice_googledriveservice_authenticate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\driveservice.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "jwt",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "asyncio",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "services_googlesheetservice_googlesheetservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_authenticate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_build_service",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_all_sheets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_set_new_row",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice",
+      "target": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_googlesheetservice_py",
+      "target": "services_googlesheetservice_run_tests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice_init",
+      "target": "services_googlesheetservice_googlesheetservice_authenticate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice_init",
+      "target": "services_googlesheetservice_googlesheetservice_build_service",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "services_googlesheetservice_run_tests",
+      "target": "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\googlesheetservice.py",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_userservice_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userregisterrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userregisterrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userloginrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userloginrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_verifyaccountrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_verifyaccountrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "api_services_userservice_py",
+      "target": "services_userservice_userservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_register_user",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_login_user",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_confirm_user",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_verify_account",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_update_user",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_delete_user",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_list_users",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_get_user_by_id",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "services_userservice_userservice",
+      "target": "services_userservice_userservice_get_user_by_email",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api\\services\\userservice.py",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "app_error_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\error.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_error_tsx",
+      "target": "app_error_error",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\error.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_globals_css",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "styles_css",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "fontawesome_svg_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_rootlayout",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "google",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_usercontext_userprovider",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "app_not_found_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\not-found.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_not_found_tsx",
+      "target": "app_not_found_notfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\not-found.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_herobanner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_scroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_scroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "fontawesome_svg_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_usercontext_userprovider",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_openexternallink",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_handlesearchsubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_handlesignout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "app_rootlayout_tsx",
+      "target": "app_rootlayout_checksession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\RootLayout.tsx",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "app_types_admin",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "app_usercontext_userprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "app_usercontext_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\UserContext.tsx",
+      "source_location": "L451",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_toggleplatform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleaddflipimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleremoveflipimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handleflipimagechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addticketmodal_tsx",
+      "target": "components_addticketmodal_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddTicketModal.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handleticketchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handleseattoggle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_addusermodal_tsx",
+      "target": "components_addusermodal_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AddUserModal.tsx",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "free_brands_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_adminlogin_tsx",
+      "target": "components_adminlogin_handlelogin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AdminLogin.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_sidebar_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_sidebar_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_sidebar_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_sidebar_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_sidebar_tsx",
+      "target": "fontawesome_svg_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\Sidebar.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "app_types_admin",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_fetchadmins",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_handleupdateexpiry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_subadmintable_tsx",
+      "target": "components_subadmintable_handlenotifyexpiry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "components_subadmintable_handleupdateexpiry",
+      "target": "components_subadmintable_fetchadmins",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\SubAdminTable.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_ticketcard_tsx",
+      "target": "components_ticketcard_ticketcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketCard.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_addticketmodal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_updateticketmodal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handlesearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleupdateticket",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handledeleteticket",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleaddticketclose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_tickettable_tsx",
+      "target": "components_tickettable_handleupdateticketclose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TicketTable.tsx",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handlecontactselect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handlemanualsubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_transfermodal_tsx",
+      "target": "components_transfermodal_handletransfer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\TransferModal.tsx",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "components_updateticketmodal_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_updateticketmodal_tsx",
+      "target": "components_updateticketmodal_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UpdateTicketModal.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_addusermodal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "components_usertable_handlesearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_usertable_tsx",
+      "target": "components_usertable_handleadduser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\UserTable.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "app_invalid_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_invalid_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_invalid_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_invalid_page_tsx",
+      "target": "invalid_page_invalidpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\invalid\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_login_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_adminlogin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_login_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_login_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_login_page_tsx",
+      "target": "login_page_loginpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_login_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\login\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_login_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\login\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_login_page_tsx",
+      "target": "login_page_secureloginredirect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\login\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_adminlogin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_usertable",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_tickettable",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_subadmintable",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_manage_page_tsx",
+      "target": "manage_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\manage\\page.tsx",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_sidebar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlesave",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_personal_details_page_tsx",
+      "target": "personal_details_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\personal-details\\page.tsx",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_ticketcard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_sidebar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_page_tsx",
+      "target": "tickets_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\page.tsx",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "app_types_ticket",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_transfermodal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_nextseat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_tickets_id_page_tsx",
+      "target": "id_page_prevseat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\tickets\\[id]\\page.tsx",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_components_sidebar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "transfers_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_page_tsx",
+      "target": "transfers_page_getstatuscolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\page.tsx",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "app_types_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_handlelogout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_handledisputetransfer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "app_secure_myaccount_transfers_id_page_tsx",
+      "target": "id_page_getstatustheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\secure\\myaccount\\transfers\\[id]\\page.tsx",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "react_fontawesome",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "free_solid_svg_icons",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "image",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "c_users_hp_desktop_zipper_webfixx_dev_extra_tools_uefa_app_usercontext",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "app_usercontext_useuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "id_page_fetchdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "app_ticket_details_id_page_tsx",
+      "target": "id_page_fetchdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\ticket-details\\[id]\\page.tsx",
+      "source_location": "L188",
+      "weight": 1.0
+    },
+    {
+      "source": "login_page_loginpage",
+      "target": "app_usercontext_useuser",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app\\login\\page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

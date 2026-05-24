@@ -23,13 +23,11 @@ export default function MyTicketsPage() {
     const router = useRouter();
     const {
         admin,
-        tickets: allTickets,
-        fetchAllTickets,
         setAdmin,
-        setLoading,
-        setUsers,
-        setTickets,
-        setLoggedInAdmin
+        setLoggedInAdmin,
+        verifyAdminSession,
+        fetchAllTickets,
+        tickets
     } = useUser();
 
     const [localAdmin, setLocalAdmin] = useState<string | null>(null);
@@ -59,9 +57,30 @@ export default function MyTicketsPage() {
         }
     }, [setAdmin, router, fetchAllTickets, setLoggedInAdmin]);
 
+    // Periodic session verification
     useEffect(() => {
-        if (isSessionValid === true && localAdmin && Array.isArray(allTickets)) {
-            const filtered = allTickets.filter((t) => {
+        if (isSessionValid === true) {
+            const interval = setInterval(async () => {
+                const result = await verifyAdminSession();
+                if (!result.valid) {
+                    alert("Your session has expired. You have been logged out.");
+                    localStorage.removeItem("loggedInAdmin");
+                    localStorage.removeItem("adminData");
+                    setAdmin(null);
+                    setLoggedInAdmin(null);
+                    setLocalAdmin(null);
+                    setIsSessionValid(false);
+                    router.push('/login');
+                }
+            }, 60000); // Check every 60 seconds
+
+            return () => clearInterval(interval);
+        }
+    }, [isSessionValid, verifyAdminSession, router]);
+
+    useEffect(() => {
+        if (isSessionValid === true && localAdmin && Array.isArray(tickets)) {
+            const filtered = tickets.filter((t) => {
                 // 1. Must belong to the logged-in admin
                 const matchesAdmin = t.admin === localAdmin;
                 
@@ -71,9 +90,9 @@ export default function MyTicketsPage() {
                 // 3. Platform must include "uefa" (comma separated)
                 const platformList = t.platform?.toLowerCase().split(',').map(p => p.trim()) || [];
                 const matchesPlatform = platformList.includes("uefa");
-
+                
                 if (!matchesAdmin || !isNotDeleted || !matchesPlatform) return false;
-
+                
                 // 4. Filter by Tab (Upcoming vs Past)
                 // eventStatus: PAST, ACTIVE, WAITING
                 let matchesTab = false;
@@ -82,34 +101,35 @@ export default function MyTicketsPage() {
                 } else {
                     matchesTab = t.eventStatus === 'PAST';
                 }
-
+                
                 if (!matchesTab) return false;
-
+                
                 // 5. Search Filter
                 if (searchTerm.trim()) {
                     const term = searchTerm.toLowerCase();
-                    const matchesSearch = 
-                        t.eventName?.toLowerCase().includes(term) ||
-                        t.ticketId?.toLowerCase().includes(term) ||
-                        t.venue?.toLowerCase().includes(term) ||
-                        t.location?.toLowerCase().includes(term) ||
-                        t.seatNumbers?.toLowerCase().includes(term);
+                    const matchesSearch = t.eventName?.toLowerCase().includes(term) ||
+                                        t.venue?.toLowerCase().includes(term) ||
+                                        t.location?.toLowerCase().includes(term) ||
+                                        t.section?.toLowerCase().includes(term) ||
+                                        t.row?.toLowerCase().includes(term) ||
+                                        t.seatNumbers?.toLowerCase().includes(term) ||
+                                        t.admin?.toLowerCase().includes(term);
                     
                     if (!matchesSearch) return false;
                 }
-
+                
                 return true;
             });
             setFilteredTickets(filtered);
         }
-    }, [allTickets, localAdmin, isSessionValid, activeTab, searchTerm]);
+    }, [tickets, localAdmin, isSessionValid, activeTab, searchTerm]);
 
     const handleLogout = () => {
         localStorage.removeItem("loggedInAdmin");
         localStorage.removeItem("adminData");
         setAdmin(null);
-        setUsers([]);
-        setTickets([]);
+        // Note: setUsers and setTickets are not available in this component's scope
+        // They would need to be obtained from useUser() if needed for logout
         router.push('/login');
     };
 

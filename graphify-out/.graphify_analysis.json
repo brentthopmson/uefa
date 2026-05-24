@@ -1,0 +1,311 @@
+{
+  "communities": {
+    "0": [
+      "app_components_adminlogin_tsx",
+      "app_components_updateticketmodal_tsx",
+      "app_components_usertable_tsx",
+      "app_login_page_tsx",
+      "app_secure_myaccount_manage_page_tsx",
+      "app_secure_myaccount_tickets_page_tsx",
+      "app_secure_myaccount_transfers_page_tsx",
+      "app_ticket_details_id_page_tsx",
+      "app_usercontext_useuser",
+      "components_adminlogin_handlelogin",
+      "components_updateticketmodal_handlechange",
+      "components_updateticketmodal_handlesubmit",
+      "components_usertable_handleadduser",
+      "components_usertable_handlesearch",
+      "id_page_fetchdata",
+      "login_page_loginpage",
+      "manage_page_handlelogout",
+      "tickets_page_handlelogout",
+      "transfers_page_getstatuscolor",
+      "transfers_page_handlelogout"
+    ],
+    "1": [
+      "api_services_googlesheetservice_py",
+      "services_googlesheetservice_googlesheetservice",
+      "services_googlesheetservice_googlesheetservice_authenticate",
+      "services_googlesheetservice_googlesheetservice_build_service",
+      "services_googlesheetservice_googlesheetservice_get_all_sheets",
+      "services_googlesheetservice_googlesheetservice_get_cell_value_by_search",
+      "services_googlesheetservice_googlesheetservice_get_sheet_by_name",
+      "services_googlesheetservice_googlesheetservice_get_sheet_range",
+      "services_googlesheetservice_googlesheetservice_get_sheet_rows_by_search",
+      "services_googlesheetservice_googlesheetservice_init",
+      "services_googlesheetservice_googlesheetservice_set_multiple_cell_data",
+      "services_googlesheetservice_googlesheetservice_set_new_row",
+      "services_googlesheetservice_run_tests"
+    ],
+    "2": [
+      "api_controllers_usercontroller_py",
+      "controllers_usercontroller_confirm_user",
+      "controllers_usercontroller_delete_user",
+      "controllers_usercontroller_get_user_by_email",
+      "controllers_usercontroller_get_user_by_id",
+      "controllers_usercontroller_list_users",
+      "controllers_usercontroller_login_user",
+      "controllers_usercontroller_register_user",
+      "controllers_usercontroller_update_user",
+      "controllers_usercontroller_verify_account"
+    ],
+    "3": [
+      "services_userservice_userservice",
+      "services_userservice_userservice_confirm_user",
+      "services_userservice_userservice_delete_user",
+      "services_userservice_userservice_get_user_by_email",
+      "services_userservice_userservice_get_user_by_id",
+      "services_userservice_userservice_list_users",
+      "services_userservice_userservice_login_user",
+      "services_userservice_userservice_register_user",
+      "services_userservice_userservice_update_user",
+      "services_userservice_userservice_verify_account"
+    ],
+    "4": [
+      "app_layout_rootlayout",
+      "app_layout_tsx",
+      "app_rootlayout_checksession",
+      "app_rootlayout_handlesearchsubmit",
+      "app_rootlayout_handlesignout",
+      "app_rootlayout_openexternallink",
+      "app_rootlayout_tsx",
+      "app_usercontext_tsx",
+      "app_usercontext_userprovider"
+    ],
+    "5": [
+      "app_components_addticketmodal_tsx",
+      "components_addticketmodal_handleaddflipimage",
+      "components_addticketmodal_handlechange",
+      "components_addticketmodal_handleflipimagechange",
+      "components_addticketmodal_handleremoveflipimage",
+      "components_addticketmodal_handlesubmit",
+      "components_addticketmodal_toggleplatform"
+    ],
+    "6": [
+      "app_secure_myaccount_tickets_id_page_tsx",
+      "app_secure_myaccount_transfers_id_page_tsx",
+      "id_page_getstatustheme",
+      "id_page_handledisputetransfer",
+      "id_page_handlelogout",
+      "id_page_nextseat",
+      "id_page_prevseat"
+    ],
+    "7": [
+      "api_services_driveservice_py",
+      "services_driveservice_googledriveservice",
+      "services_driveservice_googledriveservice_authenticate",
+      "services_driveservice_googledriveservice_create_subfolder",
+      "services_driveservice_googledriveservice_init",
+      "services_driveservice_googledriveservice_upload_file"
+    ],
+    "8": [
+      "app_components_tickettable_tsx",
+      "components_tickettable_handleaddticketclose",
+      "components_tickettable_handledeleteticket",
+      "components_tickettable_handlesearch",
+      "components_tickettable_handleupdateticket",
+      "components_tickettable_handleupdateticketclose"
+    ],
+    "9": [
+      "api_services_userservice_py",
+      "basemodel",
+      "services_userservice_userloginrequest",
+      "services_userservice_userregisterrequest",
+      "services_userservice_verifyaccountrequest"
+    ],
+    "10": [
+      "app_components_addusermodal_tsx",
+      "components_addusermodal_handlechange",
+      "components_addusermodal_handleseattoggle",
+      "components_addusermodal_handlesubmit",
+      "components_addusermodal_handleticketchange"
+    ],
+    "11": [
+      "app_components_subadmintable_tsx",
+      "components_subadmintable_fetchadmins",
+      "components_subadmintable_handlenotifyexpiry",
+      "components_subadmintable_handleupdateexpiry"
+    ],
+    "12": [
+      "app_components_transfermodal_tsx",
+      "components_transfermodal_handlecontactselect",
+      "components_transfermodal_handlemanualsubmit",
+      "components_transfermodal_handletransfer"
+    ],
+    "13": [
+      "app_secure_myaccount_personal_details_page_tsx",
+      "personal_details_page_handlechange",
+      "personal_details_page_handlelogout",
+      "personal_details_page_handlesave"
+    ],
+    "14": [
+      "app_page_herobanner",
+      "app_page_scroll",
+      "app_page_tsx"
+    ],
+    "15": [
+      "app_error_error",
+      "app_error_tsx"
+    ],
+    "16": [
+      "app_not_found_notfound",
+      "app_not_found_tsx"
+    ],
+    "17": [
+      "app_components_ticketcard_tsx",
+      "components_ticketcard_ticketcard"
+    ],
+    "18": [
+      "app_invalid_page_tsx",
+      "invalid_page_invalidpage"
+    ],
+    "19": [
+      "app_secure_login_page_tsx",
+      "login_page_secureloginredirect"
+    ],
+    "20": [
+      "next_env_d_ts"
+    ],
+    "21": [
+      "next_config_js"
+    ],
+    "22": [
+      "postcss_config_js"
+    ],
+    "23": [
+      "tailwind_config_js"
+    ],
+    "24": [
+      "api_index_py"
+    ],
+    "25": [
+      "app_declarations_d_ts"
+    ],
+    "26": [
+      "app_types_ts"
+    ],
+    "27": [
+      "app_components_sidebar_tsx"
+    ],
+    "28": [
+      "app_types_fortawesome_d_ts"
+    ],
+    "29": [
+      "utils_utils_ts"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11,
+    "1": 0.23,
+    "2": 0.2,
+    "3": 0.2,
+    "4": 0.22,
+    "5": 0.29,
+    "6": 0.29,
+    "7": 0.4,
+    "8": 0.33,
+    "9": 0.6,
+    "10": 0.4,
+    "11": 0.67,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.67,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_usercontext_useuser",
+      "label": "useUser()",
+      "degree": 17
+    },
+    {
+      "id": "services_googlesheetservice_googlesheetservice",
+      "label": "GoogleSheetService",
+      "degree": 11
+    },
+    {
+      "id": "services_userservice_userservice",
+      "label": "UserService",
+      "degree": 10
+    },
+    {
+      "id": "services_driveservice_googledriveservice",
+      "label": "GoogleDriveService",
+      "degree": 5
+    },
+    {
+      "id": "app_usercontext_userprovider",
+      "label": "UserProvider()",
+      "degree": 3
+    },
+    {
+      "id": "services_googlesheetservice_run_tests",
+      "label": "run_tests()",
+      "degree": 2
+    },
+    {
+      "id": "services_userservice_userregisterrequest",
+      "label": "UserRegisterRequest",
+      "degree": 2
+    },
+    {
+      "id": "services_userservice_userloginrequest",
+      "label": "UserLoginRequest",
+      "degree": 2
+    },
+    {
+      "id": "services_userservice_verifyaccountrequest",
+      "label": "VerifyAccountRequest",
+      "degree": 2
+    },
+    {
+      "id": "components_subadmintable_fetchadmins",
+      "label": "fetchAdmins()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "LoginPage()",
+      "target": "useUser()",
+      "source_files": [
+        "app/login/page.tsx",
+        "app/UserContext.tsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `LoginPage()` unexpectedly reaches hub `useUser()`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `useUser()` connect `Community 0` to `Community 4`, `Community 5`, `Community 6`, `Community 10`, `Community 12`, `Community 13`?",
+      "why": "High betweenness centrality (0.159) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `UserService` connect `Community 3` to `Community 9`?",
+      "why": "High betweenness centrality (0.009) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
