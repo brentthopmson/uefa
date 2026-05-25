@@ -137,7 +137,7 @@ export default function TicketDetailsAccountPage() {
         <div className="min-h-screen bg-[#001C4B] flex flex-col font-sans">
 
             {/* ── Header: deep blue bg, white text ── */}
-            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-2 fixed top-0 z-50">
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-2 fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
 
                     {/* Left: If on first seat, go back to list. If on a subsequent seat, go to previous seat. */}

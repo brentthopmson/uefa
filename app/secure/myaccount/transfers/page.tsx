@@ -132,7 +132,7 @@ export default function TransfersPage() {
         <div className="min-h-screen bg-[#001C4B] flex flex-col font-sans">
 
             {/* ── Header ── */}
-            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 fixed top-0 z-50">
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
                         <FontAwesomeIcon icon={faBars} className="text-xl" />

@@ -114,7 +114,7 @@ export default function TransferDetailsPage() {
     return (
         <div className="min-h-screen bg-[#F2F3F5] flex flex-col font-sans">
             {/* Header */}
-            <header className="bg-[#001C4B] text-white px-4 py-3 fixed top-0 z-50">
+            <header className="bg-[#001C4B] text-white px-4 py-3 fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-3xl mx-auto flex items-center justify-between">
                     <button onClick={() => router.back()} className="text-white/80 hover:opacity-70 transition-opacity p-1">
                         <FontAwesomeIcon icon={faChevronLeft} className="text-xl" />
