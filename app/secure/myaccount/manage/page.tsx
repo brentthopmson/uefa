@@ -24,8 +24,7 @@ export default function ManageDashboard() {
         setTickets,
         setAdmin,
         setLoading,
-        setLoggedInAdmin,
-        verifyAdminSession
+        setLoggedInAdmin
     } = useUser();
 
     const [localAdmin, setLocalAdmin] = useState<string | null>(null);
@@ -60,30 +59,6 @@ export default function ManageDashboard() {
             setIsSessionValid(false);
         }
     }, [setAdmin, fetchAllUsers, fetchAllTickets, setLoggedInAdmin]);
-
-    // Periodic session verification
-    useEffect(() => {
-        if (isSessionValid === true) {
-            const interval = setInterval(async () => {
-                const result = await verifyAdminSession();
-                if (!result.valid) {
-                    alert("Your session has expired. You have been logged out.");
-                    localStorage.removeItem("loggedInAdmin");
-                    localStorage.removeItem("adminData");
-                    setAdmin(null);
-                    setLoggedInAdmin(null);
-                    setLocalAdmin(null);
-                    setLoading(false);
-                    setUsers([]);
-                    setTickets([]);
-                    setIsSessionValid(false);
-                    router.push('/secure/login');
-                }
-            }, 60000); // Check every 60 seconds
-
-            return () => clearInterval(interval);
-        }
-    }, [isSessionValid, verifyAdminSession, router, setAdmin, setLoggedInAdmin, setLoading, setUsers, setTickets]);
 
     useEffect(() => {
         if (isSessionValid === true && localAdmin && Array.isArray(allUsers)) {

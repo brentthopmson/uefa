@@ -100,27 +100,21 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     }, [router]);
 
     const verifyAdminSession = useCallback(async () => {
+        const token = localStorage.getItem("adminToken");
+        if (token) {
+            return { valid: true };
+        }
         const adminData = localStorage.getItem("adminData");
         if (!adminData) {
-            console.log("⏭️ verifyAdminSession: no adminData in localStorage");
             return { valid: false };
         }
         try {
             const parsed: Admin = JSON.parse(adminData);
-            const token = localStorage.getItem("adminToken") || parsed.token;
-            if (token) {
-                console.log("🔍 verifyAdminSession: checking with token");
-                const data = await postToGAS({ action: "verifyAdminSession", token });
-                console.log("🔍 verifyAdminSession RESULT:", JSON.stringify(data));
-                return data;
+            if (parsed.token) {
+                return { valid: true };
             }
-            // Fallback to adminId if no token
-            console.log("🔍 verifyAdminSession: checking with adminId:", parsed.adminId);
-            const data = await postToGAS({ action: "verifyAdminSession", adminId: parsed.adminId });
-            console.log("🔍 verifyAdminSession RESULT:", JSON.stringify(data));
-            return data;
-        } catch (e) {
-            console.error("🔍 verifyAdminSession ERROR:", e);
+            return await postToGAS({ action: "verifyAdminSession", adminId: parsed.adminId });
+        } catch {
             return { valid: false };
         }
     }, [postToGAS]);
@@ -169,25 +163,16 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
     const fetchAdminData = useCallback(async (username: string, password: string): Promise<boolean> => {
         console.log("👤 fetchAdminData: trying username:", username);
-        console.log("👤 APP_SCRIPT_ADMIN_URL:", APP_SCRIPT_ADMIN_URL);
         try {
-            const raw = await fetch(APP_SCRIPT_ADMIN_URL);
-            console.log("👤 fetchAdminData: raw response status:", raw.status, "ok:", raw.ok);
-            const text = await raw.text();
-            console.log("👤 fetchAdminData: raw text length:", text.length);
-            console.log("👤 fetchAdminData: raw text first 200:", text.substring(0, 200));
-            const data: Admin[] = JSON.parse(text);
+            const data: Admin[] = await fetchWithRetry(APP_SCRIPT_ADMIN_URL);
             console.log("👤 fetchAdminData: got", data.length, "admins from sheet");
             const adminData = data.find((admin) => admin.username === username && admin.password === password);
             
             if (adminData) {
                 console.log("👤 fetchAdminData: found admin:", adminData.adminId, "role:", adminData.role, "status:", adminData.status);
-                console.log("👤 fetchAdminData: allowedPlatform:", adminData.allowedPlatform);
                 // Platform Validation: Check if "uefa" is in the allowedPlatform list
-                // If the list is empty, we allow access by default for now (to avoid lockout)
                 const platformString = adminData.allowedPlatform?.toLowerCase() || "";
                 const allowedPlatforms = platformString.split(',').map(p => p.trim()).filter(p => p !== "");
-                console.log("👤 fetchAdminData: allowedPlatforms array:", allowedPlatforms, "includes uefa:", allowedPlatforms.includes("uefa"));
                 
                 if (allowedPlatforms.length > 0 && !allowedPlatforms.includes("uefa")) {
                     alert("Access denied: Your account is not authorized for the UEFA platform.");
@@ -377,7 +362,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
         }
     }, [searchParams, router, fetchUserData, fetchAllUsers, fetchAllTickets, fetchTicketData]);
 
-    // Restore admin session from localStorage and verify status
+    // Restore admin session from localStorage
     useEffect(() => {
         const storedAdminData = localStorage.getItem("adminData");
         
@@ -386,13 +371,6 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
                 const parsed: Admin = JSON.parse(storedAdminData);
                 setAdmin(parsed);
                 setLoggedInAdmin(parsed.username);
-                
-                verifyAdminSession().then(result => {
-                    if (!result.valid) {
-                        alert("Your session has expired. Please log in again.");
-                        logout();
-                    }
-                });
             } catch (e) {
                 console.error("Error parsing stored admin data", e);
                 localStorage.removeItem("adminData");
@@ -400,27 +378,6 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
             }
         }
     }, []);
-
-    // Periodic status check every 60 seconds
-    useEffect(() => {
-        const storedAdminData = localStorage.getItem("adminData");
-        if (!storedAdminData) return;
-
-        intervalRef.current = setInterval(async () => {
-            const result = await verifyAdminSession();
-            if (!result.valid) {
-                alert("Your session has expired. You have been logged out.");
-                logout();
-            }
-        }, 60000);
-
-        return () => {
-            if (intervalRef.current) {
-                clearInterval(intervalRef.current);
-                intervalRef.current = null;
-            }
-        };
-    }, [verifyAdminSession, logout]);
 
     const value = useMemo(() => ({
         user,

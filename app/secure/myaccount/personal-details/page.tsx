@@ -25,7 +25,7 @@ const APP_SCRIPT_POST_URL = process.env.NEXT_PUBLIC_APP_SCRIPT_URL || "https://s
 
 export default function PersonalDetailsPage() {
     const router = useRouter();
-    const { admin, setAdmin, verifyAdminSession } = useUser();
+    const { admin, setAdmin } = useUser();
     
     const [isSessionValid, setIsSessionValid] = useState<boolean | null>(null);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -65,44 +65,6 @@ export default function PersonalDetailsPage() {
             router.replace('/login');
         }
     }, [router]);
-
-    // Periodic session verification
-    useEffect(() => {
-        if (isSessionValid === true) {
-            const interval = setInterval(async () => {
-                const result = await verifyAdminSession();
-                if (!result.valid) {
-                    alert("Your session has expired. You have been logged out.");
-                    localStorage.removeItem("loggedInAdmin");
-                    localStorage.removeItem("adminData");
-                    setAdmin(null);
-                    setIsSessionValid(false);
-                    router.push('/login');
-                }
-            }, 60000); // Check every 60 seconds
-
-            return () => clearInterval(interval);
-        }
-    }, [isSessionValid, verifyAdminSession, router, setAdmin]);
-
-    // Periodic session verification
-    useEffect(() => {
-        if (isSessionValid === true) {
-            const interval = setInterval(async () => {
-                const result = await verifyAdminSession();
-                if (!result.valid) {
-                    alert("Your session has expired. You have been logged out.");
-                    localStorage.removeItem("loggedInAdmin");
-                    localStorage.removeItem("adminData");
-                    setAdmin(null);
-                    setIsSessionValid(false);
-                    router.push('/login');
-                }
-            }, 60000); // Check every 60 seconds
-
-            return () => clearInterval(interval);
-        }
-    }, [isSessionValid, verifyAdminSession, router, setAdmin]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;

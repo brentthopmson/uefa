@@ -20,7 +20,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const [redirecting, setRedirecting] = useState(false);
     const [signingIn, setSigningIn] = useState(false);
-    const { fetchAdminData, loginWithToken, loading, setLoading } = useUser();
+    const { fetchAdminData, loginWithToken } = useUser();
     const router = useRouter();
     const searchParams = useSearchParams();
 
