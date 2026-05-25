@@ -169,17 +169,25 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
     const fetchAdminData = useCallback(async (username: string, password: string): Promise<boolean> => {
         console.log("👤 fetchAdminData: trying username:", username);
+        console.log("👤 APP_SCRIPT_ADMIN_URL:", APP_SCRIPT_ADMIN_URL);
         try {
-            const data: Admin[] = await fetchWithRetry(APP_SCRIPT_ADMIN_URL);
+            const raw = await fetch(APP_SCRIPT_ADMIN_URL);
+            console.log("👤 fetchAdminData: raw response status:", raw.status, "ok:", raw.ok);
+            const text = await raw.text();
+            console.log("👤 fetchAdminData: raw text length:", text.length);
+            console.log("👤 fetchAdminData: raw text first 200:", text.substring(0, 200));
+            const data: Admin[] = JSON.parse(text);
             console.log("👤 fetchAdminData: got", data.length, "admins from sheet");
             const adminData = data.find((admin) => admin.username === username && admin.password === password);
             
             if (adminData) {
                 console.log("👤 fetchAdminData: found admin:", adminData.adminId, "role:", adminData.role, "status:", adminData.status);
+                console.log("👤 fetchAdminData: allowedPlatform:", adminData.allowedPlatform);
                 // Platform Validation: Check if "uefa" is in the allowedPlatform list
                 // If the list is empty, we allow access by default for now (to avoid lockout)
                 const platformString = adminData.allowedPlatform?.toLowerCase() || "";
                 const allowedPlatforms = platformString.split(',').map(p => p.trim()).filter(p => p !== "");
+                console.log("👤 fetchAdminData: allowedPlatforms array:", allowedPlatforms, "includes uefa:", allowedPlatforms.includes("uefa"));
                 
                 if (allowedPlatforms.length > 0 && !allowedPlatforms.includes("uefa")) {
                     alert("Access denied: Your account is not authorized for the UEFA platform.");
@@ -227,7 +235,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
             console.error("Error fetching admin data:", error);
             return false;
         }
-    }, [fetchWithRetry]);
+    }, [postToGAS, fetchWithRetry]);
 
     const fetchUserData = useCallback(async (id: string): Promise<User | null> => {
         try {

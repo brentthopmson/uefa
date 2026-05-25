@@ -38,9 +38,7 @@ export default function RootLayoutWrapper({
   };
 
   const handleSignOut = () => {
-    localStorage.removeItem("loggedInAdmin");
-    localStorage.removeItem("adminData");
-    router.push('/login');
+    sessionLogout();
   };
 
   const shouldShowHeaderFooter =

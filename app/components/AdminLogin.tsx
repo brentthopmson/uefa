@@ -57,8 +57,10 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ setLoggedInAdmin, setUsers }) =
         }
 
         setSigningIn(true);
+        console.log("🔑 handleLogin: calling fetchAdminData for", username);
         try {
             const success = await fetchAdminData(username, password);
+            console.log("🔑 handleLogin: fetchAdminData returned", success);
 
             if (success) {
                 setRedirecting(true);
