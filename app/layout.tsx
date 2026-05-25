@@ -15,7 +15,7 @@ export const metadata = {
   description: 'Manage, transfer and use your official UEFA match tickets for Euro 2024, Champions League and more.',
   keywords: 'uefa, tickets, euro 2024, champions league, mobile tickets',
   manifest: '/manifest.json',
-  viewport: 'width=device-width, initial-scale=1, viewport-fit=cover, format-detection=telephone=no',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, format-detection=telephone=no',
   icons: {
     icon: [
       { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJEeQooGVRcuv7w9UddBTFqiXMIBDVUVrQ&s' },
@@ -58,7 +58,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://media.stubhubstatic.com" />
         <link rel="dns-prefetch" href="https://media.stubhubstatic.com" />
       </head>
-      <body className={inter.className} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <style>{`
+        body {
+          padding-top: env(safe-area-inset-top);
+          padding-bottom: env(safe-area-inset-bottom);
+        }
+        header.fixed {
+          padding-top: env(safe-area-inset-top);
+        }
+        nav.fixed {
+          padding-bottom: env(safe-area-inset-bottom);
+        }
+      `}</style>
+      <body className={inter.className}>
         <UserProvider>
           <RootLayoutWrapper inter={inter}>
             {children}
