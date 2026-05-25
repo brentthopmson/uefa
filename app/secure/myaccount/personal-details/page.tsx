@@ -145,7 +145,7 @@ export default function PersonalDetailsPage() {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             {/* ── Header ── */}
-            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 sticky top-0 z-50">
+            <header className="bg-[#001C4B] text-white border-b border-white/10 px-4 py-3 fixed top-0 z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-white/80 hover:opacity-70 transition-opacity p-1">
                         <FontAwesomeIcon icon={isSidebarOpen ? faTimesCircle : faBars} className="text-xl" />
@@ -158,7 +158,7 @@ export default function PersonalDetailsPage() {
             </header>
 
             {/* Scrollable Content Area */}
-            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row py-8 px-4 gap-8 overflow-y-auto">
+            <div className="flex-1 max-w-7xl mx-auto w-full flex flex-col lg:flex-row pt-[72px] px-4 gap-8 overflow-y-auto">
                 <Sidebar
                     sidebarItems={sidebarItems}
                     isSidebarOpen={isSidebarOpen}
