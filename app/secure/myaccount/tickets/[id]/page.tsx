@@ -111,6 +111,7 @@ export default function TicketDetailsAccountPage() {
     const handleLogout = () => {
         localStorage.removeItem("loggedInAdmin");
         localStorage.removeItem("adminData");
+        localStorage.removeItem("adminToken");
         setAdmin(null);
         setUsers([]);
         setTickets([]);

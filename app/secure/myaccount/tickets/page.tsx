@@ -105,6 +105,7 @@ export default function MyTicketsPage() {
     const handleLogout = () => {
         localStorage.removeItem("loggedInAdmin");
         localStorage.removeItem("adminData");
+        localStorage.removeItem("adminToken");
         setAdmin(null);
         // Note: setUsers and setTickets are not available in this component's scope
         // They would need to be obtained from useUser() if needed for logout

@@ -96,8 +96,8 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
             clearInterval(intervalRef.current);
             intervalRef.current = null;
         }
-        router.push('/login');
-    }, [router]);
+        window.location.href = '/login';
+    }, []);
 
     const verifyAdminSession = useCallback(async () => {
         const token = localStorage.getItem("adminToken");
