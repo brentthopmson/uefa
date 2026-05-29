@@ -96,7 +96,13 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
             clearInterval(intervalRef.current);
             intervalRef.current = null;
         }
-        window.location.href = '/login';
+        if (typeof caches !== 'undefined') {
+            caches.keys().then(names => Promise.all(names.map(name => caches.delete(name)))).then(() => {
+                window.location.href = '/login';
+            });
+        } else {
+            window.location.href = '/login';
+        }
     }, []);
 
     const verifyAdminSession = useCallback(async () => {
