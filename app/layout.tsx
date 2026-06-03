@@ -62,9 +62,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://media.stubhubstatic.com" />
         <link rel="dns-prefetch" href="https://media.stubhubstatic.com" />
         <style>{`
+          html { background: #001C4B; }
           body {
-            padding-top: env(safe-area-inset-top);
             padding-bottom: env(safe-area-inset-bottom);
+            overscroll-behavior: none;
           }
           header.fixed {
             padding-top: env(safe-area-inset-top);
