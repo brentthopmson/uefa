@@ -1,0 +1,15 @@
+{
+  "name": "UEFA Mobile Tickets",
+  "short_name": "UEFA",
+  "description": "Manage and use your official UEFA match tickets",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#001C4B",
+  "theme_color": "#001C4B",
+  "categories": ["sports", "events", "tickets"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" }
+  ]
+}
