@@ -27,9 +27,6 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
         doorTime: aiPrefill.doorTime || prev.doorTime,
         section: aiPrefill.section || prev.section,
         sectionNo: aiPrefill.sectionNo || prev.sectionNo,
-        gate: aiPrefill.gate || prev.gate,
-        entrance: aiPrefill.entrance || prev.entrance,
-        hospitalityArea: aiPrefill.hospitalityArea || prev.hospitalityArea,
         row: aiPrefill.row || prev.row,
         seatNumbers: aiPrefill.seatNumbers || prev.seatNumbers,
         category: aiPrefill.category || prev.category,
@@ -50,9 +47,6 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
     doorTime: '',
     section: '',
     sectionNo: '',
-    gate: '',
-    entrance: '',
-    hospitalityArea: '',
     row: '',
     category: '',
     seatNumbers: '',
@@ -289,42 +283,6 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
                 name="sectionNo"
                 value={formData.sectionNo}
                 onChange={handleChange}
-                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Gate</label>
-              <input
-                type="text"
-                name="gate"
-                value={formData.gate}
-                onChange={handleChange}
-                placeholder="e.g. G, 3, A"
-                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Entrance</label>
-              <input
-                type="text"
-                name="entrance"
-                value={formData.entrance}
-                onChange={handleChange}
-                placeholder="e.g. E, VIP, North"
-                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Hospitality Area</label>
-              <input
-                type="text"
-                name="hospitalityArea"
-                value={formData.hospitalityArea}
-                onChange={handleChange}
-                placeholder="e.g. Village A, Lounge B"
                 className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
               />
             </div>
