@@ -59,6 +59,9 @@ export interface Ticket {
   section: string;
   sectionNo: string;
   row: string;
+  gate?: string;
+  entrance?: string;
+  hospitalityArea?: string;
   category?: string;
   ticketFolderId: string;
   ageRestriction: string;
