@@ -27,9 +27,13 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
         doorTime: aiPrefill.doorTime || prev.doorTime,
         section: aiPrefill.section || prev.section,
         sectionNo: aiPrefill.sectionNo || prev.sectionNo,
+        gate: aiPrefill.gate || prev.gate,
+        entrance: aiPrefill.entrance || prev.entrance,
+        hospitalityArea: aiPrefill.hospitalityArea || prev.hospitalityArea,
         row: aiPrefill.row || prev.row,
         seatNumbers: aiPrefill.seatNumbers || prev.seatNumbers,
         category: aiPrefill.category || prev.category,
+        ticketHolder: aiPrefill.ticketHolder || prev.ticketHolder,
         ageRestriction: aiPrefill.ageRestriction || prev.ageRestriction,
         description: aiPrefill.description || prev.description,
         coverImage: aiPrefill.coverImage || prev.coverImage,
@@ -47,8 +51,12 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
     doorTime: '',
     section: '',
     sectionNo: '',
+    gate: '',
+    entrance: '',
+    hospitalityArea: '',
     row: '',
     category: '',
+    ticketHolder: '',
     seatNumbers: '',
     platform: 'uefa',
     ageRestriction: 'All Ages',
@@ -288,6 +296,42 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
             </div>
 
             <div>
+              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Gate</label>
+              <input
+                type="text"
+                name="gate"
+                value={formData.gate}
+                onChange={handleChange}
+                placeholder="e.g. G, 3, A"
+                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Entrance</label>
+              <input
+                type="text"
+                name="entrance"
+                value={formData.entrance}
+                onChange={handleChange}
+                placeholder="e.g. E, VIP, North"
+                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Hospitality Area</label>
+              <input
+                type="text"
+                name="hospitalityArea"
+                value={formData.hospitalityArea}
+                onChange={handleChange}
+                placeholder="e.g. Village A, Lounge B"
+                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#026cdf]"
+              />
+            </div>
+
+            <div>
               <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Category</label>
               <input
                 type="text"
@@ -297,7 +341,19 @@ const AddTicketModal: React.FC<AddTicketModalProps> = ({ onClose }) => {
                 className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
               />
             </div>
-            
+
+            <div>
+              <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Ticket Holder</label>
+              <input
+                type="text"
+                name="ticketHolder"
+                value={formData.ticketHolder}
+                onChange={handleChange}
+                placeholder="e.g. John Doe"
+                className="w-full p-3 bg-gray-50 border-2 border-transparent rounded-xl focus:border-[#026cdf] focus:bg-white outline-none transition-all font-bold text-[#1f262d]"
+              />
+            </div>
+
             <div>
               <label className="block text-[11px] font-black text-gray-400 uppercase tracking-widest mb-1 ml-1">Row*</label>
               <input
